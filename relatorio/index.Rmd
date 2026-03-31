@@ -27,7 +27,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Mais informações sobre mim
 
-Acesse: [Marcos Vinícius](marcosvinicius31619.github.io/relatorio-estprob){target="_blank"}
+Acesse: [Marcos Vinícius](./){target="_blank"}
 
 # Página dos alunos da disciplina
 
