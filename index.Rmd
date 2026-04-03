@@ -1,9 +1,11 @@
 ---
-title: "Marcos Vinícius"
+title: "Marcos Vinícius e Daniel"
 image: "logo.png"
 links:
-  - label: GitHub
+  - label: GitHub Marcos
     url: "https://github.com/marcosvinicius31619"
+  - label: GitHub Daniel
+    url: "https://github.com/danielDFAJ"
   - label: Email
     url: "mailto:marcosvinicius31619@gmail.com"
   - label: Relatórios
@@ -12,4 +14,4 @@ output:
   postcards::jolla
 ---
  
-Descrição sobre o aluno(a)!
+Cursando engenharia mecatrônica

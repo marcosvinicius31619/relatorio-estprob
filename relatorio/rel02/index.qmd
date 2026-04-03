@@ -1,9 +1,7 @@
 ---
-# Só mude aqui!!!!
-author: "Nome do Aluno"
-title: "Relatório de Aula Prática 02"
+author: "Daniel de Freitas e Marcos Vinicius"
+title: "Relatório sobre a linguagem R"
 bibliography: referencias.bib
-# A partir daqui nao faca alteracoes!!!!!
 link-citations: true
 csl: associacao-brasileira-de-normas-tecnicas-ipea.csl
 subtitle: "<a href='https://bendeivide.github.io/courses/epaec/' target='_blank'>Estatística e Probabilidade</a> </br> <a href='https://bendeivide.github.io' target='_blank'>Prof. Ben Dêivide (DEFIM/CAP/UFSJ)</a>"
@@ -16,7 +14,6 @@ format:
     toc: true
     number-sections: true
     theme: bootstrap
-    #css: styles.css
     code-fold: true
     code-tools: true
 execute:
@@ -25,102 +22,114 @@ execute:
   message: false
 ---
 
-
 ## 📌 Introdução
 
-Descreva o contexto da prática e sua importância.
+A linguagem R foi desenvolvida no início dos anos 90 por Ross Ihaka e Robert Gentleman, na Universidade de Auckland. Desde então, passou a ser amplamente utilizada em contextos acadêmicos e científicos.
 
-> Exemplo: análise da variabilidade em experimentos físicos utilizando uma catapulta.
+## ❓ QUAL FOI O OBJETIVO DA CRIAÇÃO DO R?
 
+A criação do R teve como principais objetivos:
 
+- Atender às necessidades da estatística e análise de dados;
+- Ser acessível para estudantes e pesquisadores;
+- Disponibilizar uma ferramenta gratuita e de código aberto;
 
-## 🎯 Objetivos
+Antes disso, softwares estatísticos eram, em sua maioria, pagos e restritos, como a linguagem S, que serviu de inspiração para o R.
 
-### Objetivo geral
+Assim, o R surgiu como uma alternativa mais flexível e adaptável às demandas modernas.
 
-Descrever o objetivo principal da prática.
+## 🌐 IMPORTÂNCIA DO R ATUALMENTE
 
-### Objetivos específicos
+Com o crescimento da tecnologia e da análise de dados, o R se tornou bastante relevante em áreas como:
 
-- Coletar dados experimentais  
-- Aplicar estatística descritiva  
-- Construir gráficos  
-- Interpretar resultados  
+- Ciência de dados;
+- Machine Learning;
+- Pesquisa acadêmica;
 
----
+Isso se deve à grande quantidade de pacotes disponíveis e à facilidade na geração de gráficos e análises.
 
-## 📚  Fundamentação Teórica
+## ☕️ Ambiente de trabalho
 
-Apresente os conceitos principais:
+O R é responsável pela execução dos cálculos e manipulação de dados.
 
-- Média
-- Variância
-- Desvio padrão
-- Amostragem
+Já o RStudio funciona como uma interface gráfica que organiza melhor o ambiente de desenvolvimento.
 
-$$
-\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
-$$
+No RStudio, temos:
 
----
+1) Editor de scripts;
+2) Área de variáveis (Environment);
+3) Console para execução de comandos;
+4) Painéis auxiliares (arquivos, gráficos, pacotes e ajuda).
 
-## ⚙️ Metodologia
+## 💻 Execução de códigos
 
-::: {.callout-note}
-Descreva como o experimento foi realizado.
-:::
+Os códigos podem ser executados diretamente no console ou por meio de scripts.
 
-- Materiais utilizados  
-- Procedimento  
-- Número de repetições  
-
----
-
-## 🔍 Resultados e Discussão
-
-Apresente e interprete os resultados obtidos a partir dos dados coletados.
-
-- Descreva os principais resultados numéricos (média, variabilidade, etc.).
-- Comente o comportamento dos dados observados nos gráficos.
-- Indique se há presença de valores discrepantes (outliers).
-- Avalie se os dados apresentam simetria ou tendência.
-
-Em seguida, discuta os resultados à luz dos conceitos teóricos:
-
-- Os resultados estão de acordo com o esperado?
-- Há grande variabilidade? O que isso significa no contexto do experimento?
-- Quais fatores podem ter influenciado os resultados?
-- Existem possíveis fontes de erro experimental?
-
-Procure não apenas descrever, mas **interpretar os dados**.
-
-### 💬 Exemplo de como citar uma referência bibliográfica
-
-Depois de inserido as informaçõe no arquivo **referencias.bib**, use:
-
-- Segundo @Rbasico2022
-- Tudo é um objeto em R [@Rbasico2022]
-
-### 📊  Análise de Dados
+Exemplo:
 
 ```{r}
-distancia <- c(10.2, 9.8, 10.5, 10.1, 9.9, 10.3)
-distancia
+
+# vetor numérico
+dados <- c(3, 6, 9, 12, 15)
+
+# cálculo da média
+mean(dados)
+
 ```
 
-## 🧠 Considerações finais
+Esse exemplo demonstra a criação de um vetor e o cálculo da média dos valores.
 
-Apresente uma síntese dos principais pontos observados no experimento.
+## 💼 ESTRUTURAS E TIPOS DE DADOS
 
-- Retome o objetivo da prática e indique se ele foi alcançado.
-- Destaque os principais aprendizados obtidos.
-- Comente brevemente sobre a qualidade dos dados coletados.
-- Sugira possíveis melhorias no procedimento experimental.
+No R, os principais tipos de dados são:
 
-Evite repetir apenas os resultados; foque nas **conclusões e reflexões** sobre a prática realizada.
+- Numeric: números decimais;
+- Integer: números inteiros;
+- Logical: valores TRUE ou FALSE;
+- Character: textos;
 
-## Aprenda Quarto
+Além disso, existem estruturas mais complexas:
 
-Acesse [Quarto](https://quarto.org/).
+- Vector: conjunto de elementos do mesmo tipo;
+- Matrix: estrutura bidimensional homogênea;
+- Data Frame: tabela com diferentes tipos de dados;
+- List: coleção de elementos variados.
+
+```{r}
+
+library(leem)
+
+valores <- c(8, 16, 24, 32, 40)
+
+valores |>
+  new_leem(variable = 1) |>
+  tabfreq()
+
+hist(valores, main = "Distribuição dos dados", col = "gray")
+
+```
+
+## 🏁 Conclusão
+
+7.0 - Aplicações do R
+
+O R é amplamente utilizado em diversas áreas, como finanças, saúde, marketing e pesquisa. Ele auxilia na análise de dados e na tomada de decisões estratégicas.
+
+7.1 - Vantagens do R
+
+Uma das principais vantagens do R é sua capacidade de manipulação e visualização de dados. Pacotes como tidyverse tornam o processo mais simples e eficiente.
+
+Além disso, ferramentas como Shiny e R Markdown permitem a criação de relatórios interativos.
+
+7.2 - Futuro da linguagem
+
+Com o avanço da tecnologia, o R continua relevante, especialmente em áreas ligadas à estatística. Ele também pode ser integrado com outras linguagens, como Python.
+
+7.3 - Importância profissional
+
+O domínio do R pode abrir oportunidades em áreas como análise de dados e pesquisa. Trata-se de uma habilidade valorizada no mercado de trabalho.
 
 ## 📖 Referências
+
+* [1] The R Project for Statistical Computing. Disponível em: https://www.r-project.org/
+* [2] RStudio Official site. Disponível em: https://posit.co/download/rstudio-desktop/
