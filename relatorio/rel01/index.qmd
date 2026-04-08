@@ -26,215 +26,85 @@ execute:
 
 ---
 
+## 📌 Introdução e Objetivo
 
-## Relatório de Experimento: Estatística e Probabilidade com Catapulta
+O relatório explica o experimento realizado em aula, com foco na analise de dados coletados após lançamentos efetuados com a catapulta. O objetivo principal é verificar a variações dos lançamentos sob a mesma configuração da catapulta.
 
-## Introdução
+## 📚 Prática Experimental
 
-Este relatório apresenta de forma detalhada um experimento prático realizado no âmbito da disciplina de Estatística e Probabilidade da UFSJ, com foco na análise de dados coletados a partir de lançamentos de uma catapulta. O objetivo central foi analisar a variabilidade dos resultados de lançamento sob configurações fixas e aplicar técnicas de análise estatística para interpretar os dados obtidos.
+O experimento da catapulta serve como uma coleta real de dados, para a aplicação de tecnicas de analise. A catapulta utilizada possui diferentes formas de configuração, podendo alterar variaveis como a tensão do elastico, o angulo da catapulta, entre outros.
 
-## Metodologia e Prática Experimental
+### Configuração Utilizada
 
-O experimento da catapulta funciona como uma base prática para a coleta de dados reais e a aplicação de técnicas de análise estatística. A catapulta utilizada no experimento possibilita o controle de diferentes fatores que influenciam o lançamento, como a tensão do elástico, o ângulo de disparo e o apoio estrutural.
+Imagem da catapulta
 
-### Fatores Controlados
+![](catapulta.jpg){width=40%}
 
-Ao longo do experimento, os seguintes fatores foram controlados para garantir a consistência e permitir a análise da variabilidade:
-
-*   **Tensão do Elástico (Posição A)**: Controla a força e a velocidade inicial do projétil.
-*   **Ângulo de Disparo (Posição B)**: Define o tempo de voo e o alcance horizontal do projétil.
-*   **Apoio Estrutural (Posição O)**: Garante a estabilidade e a geometria do movimento da catapulta.
-
-## Configuração Utilizada
-
-![Catapulta utilizada em sala](catapulta.png){width=40%}
-
-Para a realização dos lançamentos, uma configuração específica foi mantida constante na catapulta:
+Para efetuar os lançamentos, foram utilizados a seguintes configuracões na catapulta
 
 *   **Posição O-**: Nível 2
 *   **Posição A+**: Nível 3
 *   **Posição B+**: 90°
 *   **Posição A-**: Nível 4
 
-## Coleta de Dados
+Sendo a posição O-, o local onde a bolinha e colocada, a posição A+ sendo onde o elastico é preso no braço da catapulta, a posição B+ a angulação maxima que a catapulta solta a bolinha, e a posição A- sendo o nivel de pressão do elastico.
 
-Realizaram-se 22 lançamentos sob as configurações fixas mencionadas. Apesar da manutenção das mesmas configurações, foram obtidas diferentes distâncias de lançamento. Essa variação observada é um aspecto importante para a análise estatística, pois permite identificar e discutir os fatores que contribuem para a dispersão dos resultados.
+## ⚙️ Coleta de Dados
 
-### Ordenação de Dados (Rol)
+Foram feitos 22 lançamentos com a catapulta nas configurações mencionadas acima, foi obtido diferentes distancias da bolinha, variando de 276.4 cm até 326 cm. 
 
-Para tornar a análise estatística mais clara, os dados brutos coletados foram organizados em um **rol**, que é a disposição dos valores em ordem crescente. Essa organização inicial é crucial para a visualização da distribuição dos dados e para o cálculo de medidas de posição como a mediana e os quartis.
+### Tabulação dos Dados obtidos
+
+Para facilitar a analise dos dados obtidos, utilizaremos a tabulação de dados, usando o `leem` . O pacote `leem` permite a leitura e organização dos dados em formato tabular, facilitando a análise estatística, como cálculo de frequências e visualização estruturada dos dados.
+
+Siga exemplos de como fazer isso utilizando o `leem` .
+
+#### Leitura dos dados
+```r
+dados <- leem("arquivo.csv")
+
+```
+É importante que os arquivo onde está os dados esteja em .csv para que funcione.
+
+#### Tabulação dos dados
+```r
+table(dados$distancia)
+
+```
+
+Criar uma tabela
+```r
+tab(dados)
+
+```
+#### Dados brutos coletados
+
 
 **Dados brutos cm:**
 `326.0, 294.8, 296.8, 294.0, 295.8, 298.5, 300.6, 285.1, 287.1, 292.3, 290.8, 287.9, 282.9, 285.3, 281.5, 278.4, 276.4, 281.7, 277.1, 285.3, 277.1, 281.8`
 
-**Rol em cm:**
+**dados organizados em ordem crescente em cm:**
 `276.4, 277.1, 277.1, 278.4, 281.5, 281.7, 281.8, 282.9, 285.1, 285.3, 285.3, 287.1, 287.9, 290.8, 292.3, 294.0, 294.8, 295.8, 296.8, 298.5, 300.6, 326.0`
 
-## Análise da Variabilidade e Aprendizado
+## 📊 Variações dos dados e analise
 
-A constatação de resultados diferentes, mesmo com configurações fixas, ressalta a importância da estatística na compreensão de fenômenos com variabilidade inerente. Os principais fatores que podem ter contribuído para essa variabilidade incluem:
+A observação de resultados diferentes, mesmo que com as configurações fixas, mostra a importância da estatística para entender as variações. Os principais fatores que contribui para essas variações são:
 
-*   Pequenas modificações na execução de cada lançamento.
-*   Influência de fatores ambientais não controláveis, como correntes de ar.
-*   Limitações e variações nos instrumentos utilizados, como a elasticidade do elástico ao longo do tempo.
+*   Modificações minimas na posição da catapulta;
+*   Influência de fatores externos, como o clima;
+*   Desgaste do eslástico da catapulta;
 
-## Medidas Estatísticas
+## 🧠 Conclusão
 
-Para a análise dos dados coletados, as seguintes medidas estatísticas foram calculadas:
+A partir dos dados obtidos no experimento com a catapulta, foi possível observar que, mesmo mantendo uma configuração fixa, os resultados dos lançamentos apresentaram variações consideráveis. Isso evidencia que, em experimentos práticos, pequenas mudanças nas condições iniciais ou fatores externos podem influenciar diretamente os resultados.
 
-*   **Média**: 288.96 cm. Representa o ponto central em torno do qual os dados se concentram.
-*   **Mediana**: 286.20 cm. Indica o valor central dos dados, sendo menos sensível a valores extremos.
-*   **Desvio Padrão**: 11.07 cm. Mede a dispersão ou variação dos dados em relação à média.
-*   **Mínimo**: 276.40 cm.
-*   **Máximo**: 326.00 cm.
-*   **Amplitude**: 49.60 cm.
+A utilização da tabulação de dados, com auxílio do pacote `leem` e de ferramentas do próprio R, permitiu organizar e analisar os valores coletados de forma mais clara e eficiente. Por meio dessa organização, foi possível identificar padrões, distribuições e até possíveis valores atípicos, contribuindo para uma melhor compreensão do comportamento dos dados.
 
-Essas medidas são importantes para compreender a distribuição dos lançamentos e facilitar as análises estatísticas subsequentes.
-
-## Identificação de Valores Atípicos
-
-Ao longo do experimento, a ocorrência de alguns valores de lançamento significativamente maiores ou menores que os demais foi observada. Através da análise de quartis e do Intervalo Interquartil (IQR), foi identificado um valor atípico: **326.0 cm**. Este valor excede o limite superior calculado (Q3 + 1.5 * IQR).
-
-Esse valor atípico pode ter ocorrido por:
-
-*   Erros na execução do lançamento da catapulta.
-*   Variações na deformação do elástico, resultando em maior ou menor força aplicada.
-*   Variações ambientais pontuais que afetaram um lançamento específico.
-
-A identificação e análise desses valores atípicos são importantes para entender a robustez do experimento e a influência de fatores não previstos.
-
-
-## Conclusões Estatísticas
-
-A partir dos dados obtidos e nas análises estatísticas, diversas conclusões podem ser inferidas sobre o experimento da catapulta:
-
-*   **Variabilidade Inerente**: Mesmo sob condições controladas, a variabilidade nos resultados de lançamento é uma característica intrínseca do experimento, reforçando a necessidade de métodos estatísticos para sua compreensão.
-*   **Distribuição dos Dados**: A análise da distribuição dos alcances (por exemplo, através de histogramas e boxplots) pode revelar se os dados seguem uma distribuição normal ou outra forma, o que é crucial para a escolha de testes estatísticos apropriados.
-*   **Impacto dos Fatores Controlados**: Através de análises de variância (ANOVA) ou testes t, é possível determinar se as diferentes configurações dos fatores controlados (tensão, ângulo, apoio) têm um impacto estatisticamente significativo no alcance médio dos lançamentos.
-*   **Correlação e Regressão**: Se variáveis adicionais forem coletadas, análises de correlação e regressão podem identificar relações entre essas variáveis e o alcance, permitindo a construção de modelos preditivos para o desempenho da catapulta.
-*   **Controle de Qualidade**: O experimento serve como um excelente exemplo para ilustrar conceitos de controle estatístico de processo (CEP), onde gráficos de controle podem ser utilizados para monitorar a estabilidade do processo de lançamento ao longo do tempo.
-*   **Robustez do Experimento**: A presença de valores atípicos, embora desafiadora, oferece uma oportunidade para discutir a robustez das medidas estatísticas e a importância da identificação e tratamento de *outliers*.
-
-De modo geral, o experimento da catapulta não apenas demonstra os princípios fundamentais da estatística descritiva e inferencial, mas também serve como uma plataforma prática para explorar a complexidade da variabilidade em sistemas reais e a aplicação de ferramentas estatísticas para extrair conhecimento significativo dos dados.
-
-## Aplicação do Pacote `leem` (R) na Análise de Dados
-
-Para realizar a análise estatística dos dados obtidos no experimento da catapulta, o pacote `leem` (Laboratório de Ensino de Estatística e Matemática), desenvolvido pelo Prof. Ben Dêivide da UFSJ, oferece um conjunto de ferramentas didáticas e funcionais em linguagem R. Este pacote é particularmente útil para o ensino e a prática de estatística, permitindo a exploração de conceitos de forma interativa e visual.
-
-### Exemplos de Aplicação do `leem`
-
-Com os dados brutos do experimento agora disponíveis, a aplicação do `leem` pode seguir os seguintes passos gerais:
-
-1.  **Importação e Organização dos Dados**: Os dados de alcance dos lançamentos seriam importados para o ambiente R. O `leem` pode auxiliar na criação de objetos de dados estruturados para facilitar a análise.
-2.  **Cálculo de Medidas Descritivas**: Utilizar funções do `leem` para calcular rapidamente a média, mediana, desvio padrão, variância, quartis e outras medidas descritivas dos alcances. Isso forneceria um resumo quantitativo da performance da catapulta.
-3.  **Visualização de Dados**: O pacote `leem` permite a criação de gráficos estatísticos essenciais, como histogramas, boxplots e gráficos de dispersão. Essas visualizações são cruciais para entender a distribuição dos dados, identificar valores atípicos e observar padrões.
-    *   **Histograma**: Para visualizar a frequência dos diferentes alcances e a forma da distribuição.
-    *   **Boxplot**: Para identificar a mediana, quartis e a presença de *outliers* de forma clara.
-4.  **Análise de Variabilidade**: Explorar a variabilidade dos lançamentos, possivelmente comparando diferentes configurações (se houvesse mais de uma) ou analisando a consistência ao longo do tempo. O `leem` pode oferecer funções para testes de hipóteses simples ou análises de variância, se aplicável.
-5.  **Simulações e Modelagem**: Para um estudo mais avançado, o `leem` pode ser empregado em simulações para entender o comportamento probabilístico dos lançamentos ou para construir modelos simples que relacionem os fatores controlados com o alcance.
-
-O uso do `leem` no contexto deste experimento reforça a importância da computação estatística como uma ferramenta poderosa para a análise de dados reais, permitindo que os estudantes apliquem conceitos teóricos em um cenário prático e obtenham *insights* significativos sobre a variabilidade e o desempenho da catapulta.
-
-
-
-### Principais Resultados Numéricos
-
-A tabela a seguir resume as principais medidas estatísticas calculadas para os alcances dos lançamentos:
-
-| Medida Estatística | Valor (cm) |
-| :----------------- | :--------- |
-| Média              | 288.96     |
-| Mediana            | 286.20     |
-| Desvio Padrão      | 11.07      |
-| Variância          | 122.57     |
-| Mínimo             | 276.40     |
-| Máximo             | 326.00     |
-| Amplitude          | 49.60      |
-| Primeiro Quartil (Q1) | 281.73     |
-| Terceiro Quartil (Q3) | 294.60     |
-| Intervalo Interquartil (IQR) | 12.88      |
-| Limite Superior para Outliers | 313.91     |
-| Coeficiente de Variação (CV) | 3.83%      |
-
-A **média** de 288.96 cm indica o valor central dos alcances, enquanto a **mediana** de 286.20 cm, ligeiramente menor, sugere uma possível assimetria à direita na distribuição dos dados, influenciada por valores mais altos. O **desvio padrão** de 11.07 cm e o **coeficiente de variação** de 3.83% indicam uma variabilidade relativamente baixa, mas presente, nos lançamentos, o que é esperado em experimentos físicos mesmo sob condições controladas.
-
-
-
-### Discussão dos Resultados
-
-Os resultados obtidos estão em grande parte de acordo com o esperado para um experimento físico controlado, mas sujeito a variabilidades inerentes. A presença de uma **grande variabilidade**, evidenciada pelo desvio padrão e pela amplitude, significa que, mesmo com a configuração fixa da catapulta, os lançamentos não são perfeitamente replicáveis. Isso é um conceito fundamental em estatística: a variabilidade é uma característica intrínseca de qualquer processo real [1].
-
-Os fatores que podem ter influenciado esses resultados e as possíveis fontes de erro experimental incluem:
-
-*   **Variações na Execução**: Pequenas diferenças na forma como o operador armava ou liberava a catapulta em cada lançamento podem introduzir variabilidade. A precisão humana é limitada e pode levar a pequenas inconsistências [4].
-*   **Fatores Ambientais**: Correntes de ar, mesmo que sutis, podem afetar a trajetória do projétil. Embora o experimento tenha sido realizado em sala, microclimas ou movimentos de ar podem ter tido impacto [5].
-*   **Limitações dos Instrumentos**: A elasticidade do elástico pode ter variado ligeiramente ao longo dos 22 lançamentos devido à fadiga do material. Além disso, a precisão da medição do alcance pode ter pequenas margens de erro [7].
-*   **Outlier**: O valor de 326.0 cm é um outlier significativo. Sua ocorrência pode ser atribuída a um erro de medição, uma anomalia na liberação da catapulta, ou uma interação inesperada com o ambiente. A decisão de incluir ou excluir outliers da análise depende do contexto e do impacto que eles têm nas conclusões. Neste caso, ele destaca a imprevisibilidade pontual do sistema.
-
-A distribuição dos dados, embora com uma leve assimetria, não apresenta uma tendência clara de desvio para um lado específico, exceto pelo outlier. A interpretação desses dados reforça a necessidade de múltiplas repetições em experimentos para obter uma estimativa robusta da média e da variabilidade, e para identificar a presença de eventos incomuns.
-
-### Análise de Dados
-
-```r
-dados_catapulta <- c(326.0, 294.8, 296.8, 294.0, 295.8, 298.5, 300.6, 285.1, 287.1, 292.3, 290.8, 287.9, 282.9, 285.3, 281.5, 278.4, 276.4, 281.7, 277.1, 285.3, 277.1, 281.8)
-
-# Para o relatório, podemos usar funções básicas do R para replicar as medidas
-# descritivas e garantir a reprodutibilidade da análise.
-
-# Média
-media_r <- mean(dados_catapulta)
-
-# Mediana
-mediana_r <- median(dados_catapulta)
-
-# Desvio Padrão (amostral)
-desvio_padrao_r <- sd(dados_catapulta)
-
-# Mínimo e Máximo
-minimo_r <- min(dados_catapulta)
-maximo_r <- max(dados_catapulta)
-
-# Quartis
-quartis_r <- quantile(dados_catapulta, probs = c(0.25, 0.75))
-q1_r <- quartis_r[1]
-q3_r <- quartis_r[2]
-
-# Imprimir os resultados (opcional, para verificação)
-cat("\n--- Estatística Descritiva (R) ---\n")
-cat(sprintf("Média: %.2f\n", media_r))
-cat(sprintf("Mediana: %.2f\n", mediana_r))
-cat(sprintf("Desvio Padrão: %.2f\n", desvio_padrao_r))
-cat(sprintf("Mínimo: %.2f\n", minimo_r))
-cat(sprintf("Máximo: %.2f\n", maximo_r))
-cat(sprintf("Q1: %.2f\n", q1_r))
-cat(sprintf("Q3: %.2f\n", q3_r))
-
-# Geração de gráficos em R (exemplo para Quarto)
-# Histograma
-hist(dados_catapulta, main = "Distribuição dos Alcances da Catapulta",
-     xlab = "Alcance (cm)", ylab = "Frequência", col = "skyblue", border = "white")
-
-# Boxplot
-boxplot(dados_catapulta, main = "Boxplot dos Alcances",
-        ylab = "Alcance (cm)", col = "lightgreen")
-```
-
-## 🧠 Considerações finais
-
-O experimento da catapulta, embora simples em sua concepção, revelou-se uma ferramenta didática poderosa para a compreensão de conceitos fundamentais em Estatística e Probabilidade. O objetivo de analisar a variabilidade dos lançamentos sob uma configuração fixa foi plenamente alcançado. Através da coleta de 22 dados e da subsequente análise estatística, foi possível quantificar a dispersão dos resultados e identificar fatores que contribuem para essa variabilidade.
-
-Os principais aprendizados incluem a constatação de que, mesmo em condições aparentemente controladas, a variabilidade é uma característica intrínseca de processos físicos. A análise de medidas descritivas como média, mediana e desvio padrão, juntamente com a visualização gráfica por meio de histogramas e boxplots, permitiu uma interpretação aprofundada do comportamento dos dados. A identificação de um valor atípico ressaltou a importância de investigar eventos incomuns e suas possíveis causas, como erros de execução ou influências ambientais pontuais.
-
-A qualidade dos dados coletados foi satisfatória para os propósitos da análise, embora a presença do outlier indique a necessidade de rigor ainda maior na execução ou na padronização do equipamento. Para futuras melhorias no procedimento experimental, sugere-se a utilização de um mecanismo de lançamento mais automatizado para reduzir a variabilidade humana, a implementação de sensores mais precisos para medição do alcance e a realização do experimento em um ambiente mais controlado para minimizar a influência de fatores externos como o vento. Além disso, a coleta de um número maior de lançamentos poderia proporcionar uma base de dados mais robusta para análises mais avançadas, como testes de hipóteses sobre a normalidade da distribuição ou a comparação entre diferentes configurações da catapulta.
-
-## Aprenda Quarto
-
-Acesse [Quarto](https://quarto.org/).
+Dessa forma, o experimento reforça a importância da estatística na análise de fenômenos reais, mostrando que a interpretação dos dados vai além da simples observação, sendo necessária a aplicação de métodos adequados para obter conclusões mais precisas e confiáveis.
 
 ## 📖 Referências
 
 * [1] Bendeivide. **Estatística e Probabilidade (UFSJ)**. Disponível em: <http://bendeivide.github.io/courses/epaec/>.
 * [2] Bendeivide. **Modelo de Relatório**. Disponível em: <http://bendeivide.github.io/courses/epaec/modrel/>.
-* [3] Bendeivide. **Relatórios da Disciplina Estatística Experimental (UFSJ)**. Disponível em: <https://bendeivide.github.io/relatorio-estprob/relatorio/index.html#vis%C3%A3o-geral-sobre-os-relat%C3%B3rios>.
-* [4] Bendeivide. **Pacote `leem` (Laboratório de Ensino de Estatística e Matemática)**. Disponível em: <https://bendeivide.github.io/leem/>.
-* [5] Bendeivide. **Experimentos para as aulas práticas**. Dísponivel em: <https://bendeivide.github.io/courses/epaec/normal2026.1/#experimentos>.
+* [3] Bendeivide. **Pacote `leem` (Laboratório de Ensino de Estatística e Matemática)**. Disponível em: <https://bendeivide.github.io/leem/>.
+* [4] Bendeivide. **Experimentos para as aulas práticas**. Dísponivel em: <https://bendeivide.github.io/courses/epaec/normal2026.1/#experimentos>.

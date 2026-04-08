@@ -1,6 +1,6 @@
 ---
 author: "Daniel de Freitas e Marcos Vinicius"
-title: "Relatório sobre a linguagem R"
+title: "Relatório da linguagem R"
 bibliography: referencias.bib
 link-citations: true
 csl: associacao-brasileira-de-normas-tecnicas-ipea.csl
@@ -14,6 +14,7 @@ format:
     toc: true
     number-sections: true
     theme: bootstrap
+    #css: styles.css
     code-fold: true
     code-tools: true
 execute:
@@ -22,114 +23,83 @@ execute:
   message: false
 ---
 
-## 📌 Introdução
 
-A linguagem R foi desenvolvida no início dos anos 90 por Ross Ihaka e Robert Gentleman, na Universidade de Auckland. Desde então, passou a ser amplamente utilizada em contextos acadêmicos e científicos.
+# 📌 Introdução
+  A linguagem R é amplamente utilizada em áreas como estatística, ciência de dados e pesquisa acadêmica, destacando-se pela sua capacidade de manipulação, análise e visualização de dados. Desenvolvida inicialmente por Ross Ihaka e Robert Gentleman, ela se consolidou como uma das principais ferramentas para profissionais e estudantes que lidam com grandes volumes de informação e necessitam de métodos eficientes para interpretação de resultados.
 
-## ❓ QUAL FOI O OBJETIVO DA CRIAÇÃO DO R?
+  Este trabalho tem como objetivo apresentar os conceitos fundamentais da linguagem R, explorando suas principais funcionalidades, aplicações e vantagens no contexto da análise de dados.
 
-A criação do R teve como principais objetivos:
 
-- Atender às necessidades da estatística e análise de dados;
-- Ser acessível para estudantes e pesquisadores;
-- Disponibilizar uma ferramenta gratuita e de código aberto;
+# ❓  Contextualização da Linguagem 
+## Contexto em que a linguagem foi criada
 
-Antes disso, softwares estatísticos eram, em sua maioria, pagos e restritos, como a linguagem S, que serviu de inspiração para o R.
+  A linguagem R surgiu na década de 1990, em um período em que havia grande demanda por ferramentas estatísticas mais acessíveis. Muitos softwares existentes eram pagos e pouco flexíveis para pesquisa. Assim, pesquisadores buscavam alternativas que permitissem maior liberdade e adaptação. Nesse cenário, o R apareceu como uma solução livre e eficiente.
 
-Assim, o R surgiu como uma alternativa mais flexível e adaptável às demandas modernas.
 
-## 🌐 IMPORTÂNCIA DO R ATUALMENTE
+## Quem criou: Ross Ihaka e Robert Gentleman
 
-Com o crescimento da tecnologia e da análise de dados, o R se tornou bastante relevante em áreas como:
+  O R foi desenvolvido por Ross Ihaka e Robert Gentleman, professores da Universidade de Auckland, na Nova Zelândia. Eles criaram a linguagem com o objetivo de facilitar o ensino e a prática da estatística. Inicialmente voltado ao meio acadêmico, o projeto rapidamente ganhou reconhecimento. Com o tempo, passou a ser utilizado mundialmente.
+  
+## Relação com outras linguagens anteriores
 
-- Ciência de dados;
-- Machine Learning;
-- Pesquisa acadêmica;
+  A linguagem R foi fortemente inspirada na linguagem S, já utilizada para análise estatística. Ela herdou diversas ideias e estruturas dessa linguagem. No entanto, trouxe como diferencial o fato de ser gratuita e de código aberto. Isso permitiu sua rápida evolução e ampla adoção.
 
-Isso se deve à grande quantidade de pacotes disponíveis e à facilidade na geração de gráficos e análises.
+# 💻 Evolução ao Longo do Tempo da R
+## Crescimento da linguagem no meio acadêmico
 
-## ☕️ Ambiente de trabalho
+  Após sua criação, o R foi rapidamente adotado por universidades e centros de pesquisa. Sua facilidade de uso e caráter gratuito favoreceram sua disseminação entre estudantes e professores. Além disso, a possibilidade de criar e compartilhar pacotes contribuiu para seu crescimento. Com isso, tornou-se uma das principais ferramentas acadêmicas.
 
-O R é responsável pela execução dos cálculos e manipulação de dados.
+## Expansão para outras áreas além da estatística
 
-Já o RStudio funciona como uma interface gráfica que organiza melhor o ambiente de desenvolvimento.
+  Com o tempo, o uso do R deixou de ser exclusivo da estatística. Ele passou a ser utilizado em áreas como engenharia, economia, biologia e ciência de dados. Essa expansão ocorreu devido à sua versatilidade e capacidade de lidar com diferentes tipos de dados. Assim, ganhou espaço em diversos setores profissionais.
+  
+## Popularização com o avanço da tecnologia e dos dados
 
-No RStudio, temos:
+  O crescimento da produção de dados impulsionou ainda mais a popularidade do R. Com a era do big data, ferramentas capazes de analisar grandes volumes de informação se tornaram essenciais. Nesse contexto, o R se destacou como uma opção poderosa e acessível. Isso contribuiu para sua consolidação no mercado e na academia.
+  
+# 🌐 Importância da Linguagem R
+## Por que ela se tornou relevante
 
-1) Editor de scripts;
-2) Área de variáveis (Environment);
-3) Console para execução de comandos;
-4) Painéis auxiliares (arquivos, gráficos, pacotes e ajuda).
+  A linguagem R se tornou relevante por oferecer uma ferramenta gratuita, poderosa e acessível para análise de dados. Sua flexibilidade permite que usuários adaptem o ambiente conforme suas necessidades. Além disso, a grande quantidade de recursos disponíveis facilita seu uso em diferentes contextos. Isso contribuiu para sua ampla adoção ao longo do tempo.
+  
+## Papel na era dos dados
 
-## 💻 Execução de códigos
+  Na era atual, marcada pela grande produção de dados, o R desempenha um papel fundamental. Ele permite organizar, interpretar e extrair informações úteis de grandes volumes de dados. Dessa forma, auxilia na tomada de decisões em diversas áreas. Assim, tornou-se uma ferramenta essencial no cenário tecnológico e científico moderno.
+  
+# ☕️ Impacto na Ciência e Tecnologia do R
+## Contribuição para pesquisas científicas
 
-Os códigos podem ser executados diretamente no console ou por meio de scripts.
+  A linguagem R tem grande importância no desenvolvimento de pesquisas científicas. Ela permite a análise de dados de forma precisa e confiável, sendo amplamente utilizada em estudos acadêmicos. Além disso, facilita a reprodução de resultados, o que é essencial na ciência. Por isso, é muito presente em universidades e centros de pesquisa.
+  
+## Ajuda na tomada de decisões baseada em dados
 
-Exemplo:
+  O R auxilia na interpretação de dados, permitindo transformar informações em conhecimento útil. Com isso, contribui para decisões mais embasadas e seguras em diferentes áreas. Empresas e instituições utilizam essa capacidade para planejar estratégias. Dessa forma, reduz incertezas e melhora resultados.
 
-```{r}
+## Influência no desenvolvimento tecnológico
 
-# vetor numérico
-dados <- c(3, 6, 9, 12, 15)
+  A linguagem R também influencia o avanço tecnológico ao apoiar o desenvolvimento de novas soluções baseadas em dados. Ela é utilizada em áreas como inteligência artificial e análise de grandes volumes de informação. Isso contribui para inovação em diversos setores. Assim, o R participa diretamente da evolução tecnológica atual.
+  
+# 🏁 Considerações Finais sobre o R
+## A importância histórica e atual
 
-# cálculo da média
-mean(dados)
+A linguagem R apresentou uma evolução significativa desde sua criação, passando de uma ferramenta acadêmica para uma referência global. Sua proposta inicial de ser acessível e flexível contribuiu para seu crescimento contínuo. Ao longo do tempo, consolidou-se como uma das principais linguagens para análise de dados. Assim, mantém sua relevância tanto no passado quanto no presente.
 
-```
+## Visão geral do papel da linguagem R hoje
 
-Esse exemplo demonstra a criação de um vetor e o cálculo da média dos valores.
+Atualmente, o R ocupa uma posição importante no cenário tecnológico e científico. Ele é amplamente utilizado em diversas áreas que dependem da análise de dados. Sua comunidade ativa e constante atualização garantem sua continuidade. Dessa forma, permanece como uma ferramenta essencial na era da informação.
 
-## 💼 ESTRUTURAS E TIPOS DE DADOS
+# 🧠 Conclusão
 
-No R, os principais tipos de dados são:
+  Diante do que foi apresentado, é possível concluir que a R se consolidou como uma ferramenta de grande relevância ao longo do tempo, passando de um projeto acadêmico para uma linguagem amplamente utilizada em diversas áreas. Sua evolução, aliada ao caráter acessível e colaborativo, contribuiu para sua expansão e fortalecimento tanto na academia quanto no mercado.
 
-- Numeric: números decimais;
-- Integer: números inteiros;
-- Logical: valores TRUE ou FALSE;
-- Character: textos;
+  Além disso, o trabalho tenta mostrar uma visão geral da linguagem R, destacando sua importância, seu contexto histórico e seu papel na atualidade. Dessa forma, fica evidente que o R é uma ferramenta essencial na era dos dados, auxiliando na análise de informações e na tomada de decisões, sendo cada vez mais importante no desenvolvimento científico e tecnológico.
 
-Além disso, existem estruturas mais complexas:
+## Referências
 
-- Vector: conjunto de elementos do mesmo tipo;
-- Matrix: estrutura bidimensional homogênea;
-- Data Frame: tabela com diferentes tipos de dados;
-- List: coleção de elementos variados.
 
-```{r}
 
-library(leem)
 
-valores <- c(8, 16, 24, 32, 40)
+[1] *R CORE TEAM. R: A language and environment for statistical computing.* Disponível em: <https://www.r-project.org/>.
 
-valores |>
-  new_leem(variable = 1) |>
-  tabfreq()
 
-hist(valores, main = "Distribuição dos dados", col = "gray")
-
-```
-
-## 🏁 Conclusão
-
-7.0 - Aplicações do R
-
-O R é amplamente utilizado em diversas áreas, como finanças, saúde, marketing e pesquisa. Ele auxilia na análise de dados e na tomada de decisões estratégicas.
-
-7.1 - Vantagens do R
-
-Uma das principais vantagens do R é sua capacidade de manipulação e visualização de dados. Pacotes como tidyverse tornam o processo mais simples e eficiente.
-
-Além disso, ferramentas como Shiny e R Markdown permitem a criação de relatórios interativos.
-
-7.2 - Futuro da linguagem
-
-Com o avanço da tecnologia, o R continua relevante, especialmente em áreas ligadas à estatística. Ele também pode ser integrado com outras linguagens, como Python.
-
-7.3 - Importância profissional
-
-O domínio do R pode abrir oportunidades em áreas como análise de dados e pesquisa. Trata-se de uma habilidade valorizada no mercado de trabalho.
-
-## 📖 Referências
-
-* [1] The R Project for Statistical Computing. Disponível em: https://www.r-project.org/
-* [2] RStudio Official site. Disponível em: https://posit.co/download/rstudio-desktop/
+[2] *GeeksforGeeks – R Programming.* Disponível em: <https://www.geeksforgeeks.org/r-programming-language-introduction/>.
