@@ -129,7 +129,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Data de Publicação</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">07/04/2026, 20:09</p>
+      <p class="date">13/04/2026, 11:23</p>
     </div>
   </div>
   
@@ -168,20 +168,54 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="tabulação-dos-dados-obtidos" class="level3" data-number="3.1">
 <h3 data-number="3.1" class="anchored" data-anchor-id="tabulação-dos-dados-obtidos"><span class="header-section-number">3.1</span> Tabulação dos Dados obtidos</h3>
 <p>Para facilitar a analise dos dados obtidos, utilizaremos a tabulação de dados, usando o <code>leem</code> . O pacote <code>leem</code> permite a leitura e organização dos dados em formato tabular, facilitando a análise estatística, como cálculo de frequências e visualização estruturada dos dados.</p>
-<p>Siga exemplos de como fazer isso utilizando o <code>leem</code> .</p>
-<section id="leitura-dos-dados" class="level4" data-number="3.1.1">
-<h4 data-number="3.1.1" class="anchored" data-anchor-id="leitura-dos-dados"><span class="header-section-number">3.1.1</span> Leitura dos dados</h4>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>dados <span class="ot">&lt;-</span> <span class="fu">leem</span>(<span class="st">"arquivo.csv"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p>É importante que os arquivo onde está os dados esteja em .csv para que funcione.</p>
+<p>Aqui vai um exemplo do leem sendo udtilizado para tabulação de dados</p>
+<section id="exemplo" class="level4" data-number="3.1.1">
+<h4 data-number="3.1.1" class="anchored" data-anchor-id="exemplo"><span class="header-section-number">3.1.1</span> Exemplo</h4>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leem)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>dados <span class="ot">&lt;-</span> <span class="fu">read.csv2</span>(<span class="st">"arquivo.csv"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>obj <span class="ot">&lt;-</span> <span class="fu">new_leem</span>(dados<span class="sc">$</span>dados)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">tabfreq</span>(obj)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Tabela de frequência 
+Tipo de variável: discrete
+
+   Groups Fi   Fr Fac1 Fac2 Fp  Fac1p  Fac2p
+1   276.4  1 0.05    1   22  5   4.55 100.00
+2   277.1  2 0.09    3   21  9  13.64  95.45
+3   278.4  1 0.05    4   19  5  18.18  86.36
+4   281.5  1 0.05    5   18  5  22.73  81.82
+5   281.7  1 0.05    6   17  5  27.27  77.27
+6   281.8  1 0.05    7   16  5  31.82  72.73
+7   282.9  1 0.05    8   15  5  36.36  68.18
+8   285.1  1 0.05    9   14  5  40.91  63.64
+9   285.3  2 0.09   11   13  9  50.00  59.09
+10  285.5  1 0.05   12   11  5  54.55  50.00
+11  287.1  1 0.05   13   10  5  59.09  45.45
+12  287.9  1 0.05   14    9  5  63.64  40.91
+13  290.8  1 0.05   15    8  5  68.18  36.36
+14  292.3  1 0.05   16    7  5  72.73  31.82
+15  294.0  1 0.05   17    6  5  77.27  27.27
+16  294.8  1 0.05   18    5  5  81.82  22.73
+17  295.8  1 0.05   19    4  5  86.36  18.18
+18  296.8  1 0.05   20    3  5  90.91  13.64
+19  300.6  1 0.05   21    2  5  95.45   9.09
+20  326.0  1 0.05   22    1  5 100.00   4.55
+============================================== 
+Groups: Agrupamento discretizado 
+Fi: Frequência absoluta 
+Fr: Frequência relativa 
+Fac1: Frequência acumulada (abaixo de) 
+Fac2: Frequência acumulada (acima de) 
+Fp: Frequência percentual 
+Fac1p: Frequência acumulada percentual (abaixo de) 
+Fac2p: Frequência acumulada percentual (acima de) </code></pre>
+</div>
+</div>
 </section>
-<section id="tabulação-dos-dados" class="level4" data-number="3.1.2">
-<h4 data-number="3.1.2" class="anchored" data-anchor-id="tabulação-dos-dados"><span class="header-section-number">3.1.2</span> Tabulação dos dados</h4>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(dados<span class="sc">$</span>distancia)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Criar uma tabela</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tab</span>(dados)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="dados-brutos-coletados" class="level4" data-number="3.1.3">
-<h4 data-number="3.1.3" class="anchored" data-anchor-id="dados-brutos-coletados"><span class="header-section-number">3.1.3</span> Dados brutos coletados</h4>
+<section id="dados-brutos-coletados" class="level4" data-number="3.1.2">
+<h4 data-number="3.1.2" class="anchored" data-anchor-id="dados-brutos-coletados"><span class="header-section-number">3.1.2</span> Dados brutos coletados</h4>
 <p><strong>Dados brutos cm:</strong> <code>326.0, 294.8, 296.8, 294.0, 295.8, 298.5, 300.6, 285.1, 287.1, 292.3, 290.8, 287.9, 282.9, 285.3, 281.5, 278.4, 276.4, 281.7, 277.1, 285.3, 277.1, 281.8</code></p>
 <p><strong>dados organizados em ordem crescente em cm:</strong> <code>276.4, 277.1, 277.1, 278.4, 281.5, 281.7, 281.8, 282.9, 285.1, 285.3, 285.3, 287.1, 287.9, 290.8, 292.3, 294.0, 294.8, 295.8, 296.8, 298.5, 300.6, 326.0</code></p>
 </section>

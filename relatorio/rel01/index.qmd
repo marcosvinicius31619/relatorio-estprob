@@ -57,26 +57,17 @@ Foram feitos 22 lançamentos com a catapulta nas configurações mencionadas aci
 
 Para facilitar a analise dos dados obtidos, utilizaremos a tabulação de dados, usando o `leem` . O pacote `leem` permite a leitura e organização dos dados em formato tabular, facilitando a análise estatística, como cálculo de frequências e visualização estruturada dos dados.
 
-Siga exemplos de como fazer isso utilizando o `leem` .
+Aqui vai um exemplo do leem sendo udtilizado para tabulação de dados
 
-#### Leitura dos dados
-```r
-dados <- leem("arquivo.csv")
-
-```
-É importante que os arquivo onde está os dados esteja em .csv para que funcione.
-
-#### Tabulação dos dados
-```r
-table(dados$distancia)
-
+#### Exemplo
+```{r}
+#| echo: true
+library(leem)
+dados <- read.csv2("arquivo.csv")
+obj <- new_leem(dados$dados)
+tabfreq(obj)
 ```
 
-Criar uma tabela
-```r
-tab(dados)
-
-```
 #### Dados brutos coletados
 
 
