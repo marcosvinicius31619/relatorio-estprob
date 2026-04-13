@@ -83,38 +83,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#introdução" id="toc-introdução" class="nav-link active" data-scroll-target="#introdução"><span class="header-section-number">1</span> 📌 Introdução</a></li>
-  <li><a href="#contextualização-da-linguagem" id="toc-contextualização-da-linguagem" class="nav-link" data-scroll-target="#contextualização-da-linguagem"><span class="header-section-number">2</span> ❓ Contextualização da Linguagem</a>
+  <li><a href="#introdução-ao-r-e-ao-github" id="toc-introdução-ao-r-e-ao-github" class="nav-link active" data-scroll-target="#introdução-ao-r-e-ao-github"><span class="header-section-number">1</span> introdução ao R e ao GitHub</a></li>
+  <li><a href="#historia-do-r" id="toc-historia-do-r" class="nav-link" data-scroll-target="#historia-do-r"><span class="header-section-number">2</span> Historia do R</a></li>
+  <li><a href="#como-baixar-o-rstudio-e-o-r" id="toc-como-baixar-o-rstudio-e-o-r" class="nav-link" data-scroll-target="#como-baixar-o-rstudio-e-o-r"><span class="header-section-number">3</span> Como Baixar o RStudio e o R</a>
   <ul class="collapse">
-  <li><a href="#contexto-em-que-a-linguagem-foi-criada" id="toc-contexto-em-que-a-linguagem-foi-criada" class="nav-link" data-scroll-target="#contexto-em-que-a-linguagem-foi-criada"><span class="header-section-number">2.1</span> Contexto em que a linguagem foi criada</a></li>
-  <li><a href="#quem-criou-ross-ihaka-e-robert-gentleman" id="toc-quem-criou-ross-ihaka-e-robert-gentleman" class="nav-link" data-scroll-target="#quem-criou-ross-ihaka-e-robert-gentleman"><span class="header-section-number">2.2</span> Quem criou: Ross Ihaka e Robert Gentleman</a></li>
-  <li><a href="#relação-com-outras-linguagens-anteriores" id="toc-relação-com-outras-linguagens-anteriores" class="nav-link" data-scroll-target="#relação-com-outras-linguagens-anteriores"><span class="header-section-number">2.3</span> Relação com outras linguagens anteriores</a></li>
+  <li><a href="#o-primeiro-passo-é-instalar-o-r" id="toc-o-primeiro-passo-é-instalar-o-r" class="nav-link" data-scroll-target="#o-primeiro-passo-é-instalar-o-r"><span class="header-section-number">3.1</span> O primeiro passo é instalar o R:</a></li>
+  <li><a href="#instalação-do-rstudio" id="toc-instalação-do-rstudio" class="nav-link" data-scroll-target="#instalação-do-rstudio"><span class="header-section-number">3.2</span> Instalação do RStudio</a></li>
+  <li><a href="#o-console" id="toc-o-console" class="nav-link" data-scroll-target="#o-console"><span class="header-section-number">3.3</span> O Console</a>
+  <ul class="collapse">
+  <li><a href="#o-que-é-o-console" id="toc-o-que-é-o-console" class="nav-link" data-scroll-target="#o-que-é-o-console"><span class="header-section-number">3.3.1</span> O que é o Console?</a></li>
+  <li><a href="#como-funciona" id="toc-como-funciona" class="nav-link" data-scroll-target="#como-funciona"><span class="header-section-number">3.3.2</span> Como funciona</a></li>
   </ul></li>
-  <li><a href="#evolução-ao-longo-do-tempo-da-r" id="toc-evolução-ao-longo-do-tempo-da-r" class="nav-link" data-scroll-target="#evolução-ao-longo-do-tempo-da-r"><span class="header-section-number">3</span> 💻 Evolução ao Longo do Tempo da R</a>
+  <li><a href="#verificando-se-a-instalação-deu-certo" id="toc-verificando-se-a-instalação-deu-certo" class="nav-link" data-scroll-target="#verificando-se-a-instalação-deu-certo"><span class="header-section-number">3.4</span> Verificando se a instalação deu certo</a></li>
+  <li><a href="#algumas-caracteristicas-do-r" id="toc-algumas-caracteristicas-do-r" class="nav-link" data-scroll-target="#algumas-caracteristicas-do-r"><span class="header-section-number">3.5</span> Algumas caracteristicas do R</a>
   <ul class="collapse">
-  <li><a href="#crescimento-da-linguagem-no-meio-acadêmico" id="toc-crescimento-da-linguagem-no-meio-acadêmico" class="nav-link" data-scroll-target="#crescimento-da-linguagem-no-meio-acadêmico"><span class="header-section-number">3.1</span> Crescimento da linguagem no meio acadêmico</a></li>
-  <li><a href="#expansão-para-outras-áreas-além-da-estatística" id="toc-expansão-para-outras-áreas-além-da-estatística" class="nav-link" data-scroll-target="#expansão-para-outras-áreas-além-da-estatística"><span class="header-section-number">3.2</span> Expansão para outras áreas além da estatística</a></li>
-  <li><a href="#popularização-com-o-avanço-da-tecnologia-e-dos-dados" id="toc-popularização-com-o-avanço-da-tecnologia-e-dos-dados" class="nav-link" data-scroll-target="#popularização-com-o-avanço-da-tecnologia-e-dos-dados"><span class="header-section-number">3.3</span> Popularização com o avanço da tecnologia e dos dados</a></li>
+  <li><a href="#software-livre-e-de-codigo-aberto" id="toc-software-livre-e-de-codigo-aberto" class="nav-link" data-scroll-target="#software-livre-e-de-codigo-aberto"><span class="header-section-number">3.5.1</span> Software Livre e de Codigo Aberto</a></li>
+  <li><a href="#escopo-léxico" id="toc-escopo-léxico" class="nav-link" data-scroll-target="#escopo-léxico"><span class="header-section-number">3.5.2</span> Escopo Léxico</a></li>
+  <li><a href="#linguagem-interpretada" id="toc-linguagem-interpretada" class="nav-link" data-scroll-target="#linguagem-interpretada"><span class="header-section-number">3.5.3</span> Linguagem Interpretada</a></li>
   </ul></li>
-  <li><a href="#importância-da-linguagem-r" id="toc-importância-da-linguagem-r" class="nav-link" data-scroll-target="#importância-da-linguagem-r"><span class="header-section-number">4</span> 🌐 Importância da Linguagem R</a>
-  <ul class="collapse">
-  <li><a href="#por-que-ela-se-tornou-relevante" id="toc-por-que-ela-se-tornou-relevante" class="nav-link" data-scroll-target="#por-que-ela-se-tornou-relevante"><span class="header-section-number">4.1</span> Por que ela se tornou relevante</a></li>
-  <li><a href="#papel-na-era-dos-dados" id="toc-papel-na-era-dos-dados" class="nav-link" data-scroll-target="#papel-na-era-dos-dados"><span class="header-section-number">4.2</span> Papel na era dos dados</a></li>
   </ul></li>
-  <li><a href="#impacto-na-ciência-e-tecnologia-do-r" id="toc-impacto-na-ciência-e-tecnologia-do-r" class="nav-link" data-scroll-target="#impacto-na-ciência-e-tecnologia-do-r"><span class="header-section-number">5</span> ☕️ Impacto na Ciência e Tecnologia do R</a>
+  <li><a href="#comandos-básicos-do-r" id="toc-comandos-básicos-do-r" class="nav-link" data-scroll-target="#comandos-básicos-do-r"><span class="header-section-number">4</span> Comandos Básicos do R</a>
   <ul class="collapse">
-  <li><a href="#contribuição-para-pesquisas-científicas" id="toc-contribuição-para-pesquisas-científicas" class="nav-link" data-scroll-target="#contribuição-para-pesquisas-científicas"><span class="header-section-number">5.1</span> Contribuição para pesquisas científicas</a></li>
-  <li><a href="#ajuda-na-tomada-de-decisões-baseada-em-dados" id="toc-ajuda-na-tomada-de-decisões-baseada-em-dados" class="nav-link" data-scroll-target="#ajuda-na-tomada-de-decisões-baseada-em-dados"><span class="header-section-number">5.2</span> Ajuda na tomada de decisões baseada em dados</a></li>
-  <li><a href="#influência-no-desenvolvimento-tecnológico" id="toc-influência-no-desenvolvimento-tecnológico" class="nav-link" data-scroll-target="#influência-no-desenvolvimento-tecnológico"><span class="header-section-number">5.3</span> Influência no desenvolvimento tecnológico</a></li>
-  </ul></li>
-  <li><a href="#considerações-finais-sobre-o-r" id="toc-considerações-finais-sobre-o-r" class="nav-link" data-scroll-target="#considerações-finais-sobre-o-r"><span class="header-section-number">6</span> 🏁 Considerações Finais sobre o R</a>
-  <ul class="collapse">
-  <li><a href="#a-importância-histórica-e-atual" id="toc-a-importância-histórica-e-atual" class="nav-link" data-scroll-target="#a-importância-histórica-e-atual"><span class="header-section-number">6.1</span> A importância histórica e atual</a></li>
-  <li><a href="#visão-geral-do-papel-da-linguagem-r-hoje" id="toc-visão-geral-do-papel-da-linguagem-r-hoje" class="nav-link" data-scroll-target="#visão-geral-do-papel-da-linguagem-r-hoje"><span class="header-section-number">6.2</span> Visão geral do papel da linguagem R hoje</a></li>
-  </ul></li>
-  <li><a href="#conclusão" id="toc-conclusão" class="nav-link" data-scroll-target="#conclusão"><span class="header-section-number">7</span> 🧠 Conclusão</a>
-  <ul class="collapse">
-  <li><a href="#referências" id="toc-referências" class="nav-link" data-scroll-target="#referências"><span class="header-section-number">7.1</span> Referências</a></li>
+  <li><a href="#atribuição-de-valores" id="toc-atribuição-de-valores" class="nav-link" data-scroll-target="#atribuição-de-valores"><span class="header-section-number">4.1</span> Atribuição de Valores</a></li>
+  <li><a href="#operações-matemáticas" id="toc-operações-matemáticas" class="nav-link" data-scroll-target="#operações-matemáticas"><span class="header-section-number">4.2</span> Operações Matemáticas</a></li>
+  <li><a href="#exibir-valores" id="toc-exibir-valores" class="nav-link" data-scroll-target="#exibir-valores"><span class="header-section-number">4.3</span> Exibir Valores</a></li>
+  <li><a href="#sequências" id="toc-sequências" class="nav-link" data-scroll-target="#sequências"><span class="header-section-number">4.4</span> Sequências</a></li>
+  <li><a href="#funções-simples" id="toc-funções-simples" class="nav-link" data-scroll-target="#funções-simples"><span class="header-section-number">4.5</span> Funções Simples</a></li>
+  <li><a href="#referências" id="toc-referências" class="nav-link" data-scroll-target="#referências"><span class="header-section-number">4.6</span> Referências</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -149,7 +144,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Data de Publicação</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">07/04/2026, 20:09</p>
+      <p class="date">13/04/2026, 11:38</p>
     </div>
   </div>
   
@@ -161,86 +156,110 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="introdução" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> 📌 Introdução</h1>
-<p>A linguagem R é amplamente utilizada em áreas como estatística, ciência de dados e pesquisa acadêmica, destacando-se pela sua capacidade de manipulação, análise e visualização de dados. Desenvolvida inicialmente por Ross Ihaka e Robert Gentleman, ela se consolidou como uma das principais ferramentas para profissionais e estudantes que lidam com grandes volumes de informação e necessitam de métodos eficientes para interpretação de resultados.</p>
-<p>Este trabalho tem como objetivo apresentar os conceitos fundamentais da linguagem R, explorando suas principais funcionalidades, aplicações e vantagens no contexto da análise de dados.</p>
+<section id="introdução-ao-r-e-ao-github" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> introdução ao R e ao GitHub</h1>
+<p>O R é uma linguagem de programação voltada para análise de dados, estatística e geração de gráficos. Ele é muito utilizado em pesquisas científicas e na área de ciência de dados.</p>
+<p>O GitHub é uma plataforma online usada para armazenar e compartilhar códigos. Ele permite salvar versões de projetos, colaborar com outras pessoas e manter um histórico das alterações feitas no código.</p>
+<p>O objetivo desse trabalho é que o leitor consiga entender e utilizar o RStudio e a linguagem R, mesmo que de uma maneira leiga.</p>
 </section>
-<section id="contextualização-da-linguagem" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> ❓ Contextualização da Linguagem</h1>
-<section id="contexto-em-que-a-linguagem-foi-criada" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="contexto-em-que-a-linguagem-foi-criada"><span class="header-section-number">2.1</span> Contexto em que a linguagem foi criada</h2>
-<p>A linguagem R surgiu na década de 1990, em um período em que havia grande demanda por ferramentas estatísticas mais acessíveis. Muitos softwares existentes eram pagos e pouco flexíveis para pesquisa. Assim, pesquisadores buscavam alternativas que permitissem maior liberdade e adaptação. Nesse cenário, o R apareceu como uma solução livre e eficiente.</p>
+<section id="historia-do-r" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Historia do R</h1>
+<p>A linguagem R é uma variante da Linguagem S, concebida em 1991 por Ross Ihaka e Robert Gentleman no Departamento de Estatística da Universidade de Auckland, na Nova Zelândia.</p>
+<p>Diferente de softwares proprietários, o R nasceu de um esforço colaborativo global, unindo desenvolvedores de diversas partes do mundo em prol de uma ferramenta aberta e robusta. Embora seu desenvolvimento tenha começado no início da década de 90, a linguagem foi apresentada oficialmente ao público apenas em 1993.</p>
 </section>
-<section id="quem-criou-ross-ihaka-e-robert-gentleman" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="quem-criou-ross-ihaka-e-robert-gentleman"><span class="header-section-number">2.2</span> Quem criou: Ross Ihaka e Robert Gentleman</h2>
-<p>O R foi desenvolvido por Ross Ihaka e Robert Gentleman, professores da Universidade de Auckland, na Nova Zelândia. Eles criaram a linguagem com o objetivo de facilitar o ensino e a prática da estatística. Inicialmente voltado ao meio acadêmico, o projeto rapidamente ganhou reconhecimento. Com o tempo, passou a ser utilizado mundialmente.</p>
+<section id="como-baixar-o-rstudio-e-o-r" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Como Baixar o RStudio e o R</h1>
+<section id="o-primeiro-passo-é-instalar-o-r" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="o-primeiro-passo-é-instalar-o-r"><span class="header-section-number">3.1</span> O primeiro passo é instalar o R:</h2>
+<p>Acesse o site oficial: https://cran.r-project.org . Na página inicial, escolha o seu sistema operacional: Windows, Mac(macOS), Linux</p>
+<p>Em seguida, clique no link para baixar a versão mais recente</p>
+<p>Após o download: Abra o arquivo baixado, siga os passos de instalação (pode deixar todas as opções padrão). Clique em “Next” até concluir</p>
+<p>O R será instalado no seu computador e já poderá ser utilizado, porém ainda sem uma interface muito amigável.</p>
 </section>
-<section id="relação-com-outras-linguagens-anteriores" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="relação-com-outras-linguagens-anteriores"><span class="header-section-number">2.3</span> Relação com outras linguagens anteriores</h2>
-<p>A linguagem R foi fortemente inspirada na linguagem S, já utilizada para análise estatística. Ela herdou diversas ideias e estruturas dessa linguagem. No entanto, trouxe como diferencial o fato de ser gratuita e de código aberto. Isso permitiu sua rápida evolução e ampla adoção.</p>
+<section id="instalação-do-rstudio" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="instalação-do-rstudio"><span class="header-section-number">3.2</span> Instalação do RStudio</h2>
+<p>Depois de instalar o R, é necessário instalar o RStudio:</p>
+<p>Acesse: https://posit.co/download/rstudio-desktop/ . Role a página até a opção RStudio Desktop, clique em download na versão gratuita, escolha o seu sistema operacional novamente</p>
+<p>Após baixar:</p>
+<p>Abra o instalador Siga as instruções recomendado que mantenha tudo no padrão Finalize a instalação</p>
+<p>Agora para testar se foi tudo feito corretamente. Será necessario usar o console. Mas antes irei te explicar oque é exatamente o console.</p>
 </section>
+<section id="o-console" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="o-console"><span class="header-section-number">3.3</span> O Console</h2>
+<p>Imagine que você está em um restaurante. O RStudio é a cozinha inteira, mas o Console é o balcão de atendimento direto: o lugar onde você faz o pedido e recebe o prato na hora.</p>
+<section id="o-que-é-o-console" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="o-que-é-o-console"><span class="header-section-number">3.3.1</span> O que é o Console?</h3>
+<p>O Console é o “coração” do RStudio. É o local onde o computador realmente processa os seus comandos. Quando você digita algo lá e aperta Enter, o R executa aquela instrução imediatamente e te mostra o resultado logo abaixo.</p>
 </section>
-<section id="evolução-ao-longo-do-tempo-da-r" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> 💻 Evolução ao Longo do Tempo da R</h1>
-<section id="crescimento-da-linguagem-no-meio-acadêmico" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="crescimento-da-linguagem-no-meio-acadêmico"><span class="header-section-number">3.1</span> Crescimento da linguagem no meio acadêmico</h2>
-<p>Após sua criação, o R foi rapidamente adotado por universidades e centros de pesquisa. Sua facilidade de uso e caráter gratuito favoreceram sua disseminação entre estudantes e professores. Além disso, a possibilidade de criar e compartilhar pacotes contribuiu para seu crescimento. Com isso, tornou-se uma das principais ferramentas acadêmicas.</p>
-</section>
-<section id="expansão-para-outras-áreas-além-da-estatística" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="expansão-para-outras-áreas-além-da-estatística"><span class="header-section-number">3.2</span> Expansão para outras áreas além da estatística</h2>
-<p>Com o tempo, o uso do R deixou de ser exclusivo da estatística. Ele passou a ser utilizado em áreas como engenharia, economia, biologia e ciência de dados. Essa expansão ocorreu devido à sua versatilidade e capacidade de lidar com diferentes tipos de dados. Assim, ganhou espaço em diversos setores profissionais.</p>
-</section>
-<section id="popularização-com-o-avanço-da-tecnologia-e-dos-dados" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="popularização-com-o-avanço-da-tecnologia-e-dos-dados"><span class="header-section-number">3.3</span> Popularização com o avanço da tecnologia e dos dados</h2>
-<p>O crescimento da produção de dados impulsionou ainda mais a popularidade do R. Com a era do big data, ferramentas capazes de analisar grandes volumes de informação se tornaram essenciais. Nesse contexto, o R se destacou como uma opção poderosa e acessível. Isso contribuiu para sua consolidação no mercado e na academia.</p>
-</section>
-</section>
-<section id="importância-da-linguagem-r" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> 🌐 Importância da Linguagem R</h1>
-<section id="por-que-ela-se-tornou-relevante" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="por-que-ela-se-tornou-relevante"><span class="header-section-number">4.1</span> Por que ela se tornou relevante</h2>
-<p>A linguagem R se tornou relevante por oferecer uma ferramenta gratuita, poderosa e acessível para análise de dados. Sua flexibilidade permite que usuários adaptem o ambiente conforme suas necessidades. Além disso, a grande quantidade de recursos disponíveis facilita seu uso em diferentes contextos. Isso contribuiu para sua ampla adoção ao longo do tempo.</p>
-</section>
-<section id="papel-na-era-dos-dados" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="papel-na-era-dos-dados"><span class="header-section-number">4.2</span> Papel na era dos dados</h2>
-<p>Na era atual, marcada pela grande produção de dados, o R desempenha um papel fundamental. Ele permite organizar, interpretar e extrair informações úteis de grandes volumes de dados. Dessa forma, auxilia na tomada de decisões em diversas áreas. Assim, tornou-se uma ferramenta essencial no cenário tecnológico e científico moderno.</p>
+<section id="como-funciona" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="como-funciona"><span class="header-section-number">3.3.2</span> Como funciona</h3>
+<p>Você verá um símbolo de “maior que” &gt; no canto inferior esquerdo. Esse é o Prompt.</p>
+<p>O Prompt &gt;: É como se o console estivesse pedindo o comando, ali que você deve digitar.</p>
+<p>O Sinal de Mais (+): Se você apertar Enter e aparecer um + em vez de um &gt;, significa que o R acha que seu comando está incompleto.</p>
+<p>Você pode usar ele como laboratorio de testes e calculadora instantânea.</p>
+<p>Agora sabendo oque é o console. Vamos testar se você instalou o RStudio e a linguagem R certinho.</p>
 </section>
 </section>
-<section id="impacto-na-ciência-e-tecnologia-do-r" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> ☕️ Impacto na Ciência e Tecnologia do R</h1>
-<section id="contribuição-para-pesquisas-científicas" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="contribuição-para-pesquisas-científicas"><span class="header-section-number">5.1</span> Contribuição para pesquisas científicas</h2>
-<p>A linguagem R tem grande importância no desenvolvimento de pesquisas científicas. Ela permite a análise de dados de forma precisa e confiável, sendo amplamente utilizada em estudos acadêmicos. Além disso, facilita a reprodução de resultados, o que é essencial na ciência. Por isso, é muito presente em universidades e centros de pesquisa.</p>
+<section id="verificando-se-a-instalação-deu-certo" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="verificando-se-a-instalação-deu-certo"><span class="header-section-number">3.4</span> Verificando se a instalação deu certo</h2>
+<p>Após instalar os dois programas:</p>
+<p>Abra o RStudio No console (parte inferior da tela), digite:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"R funcionando!"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="ajuda-na-tomada-de-decisões-baseada-em-dados" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="ajuda-na-tomada-de-decisões-baseada-em-dados"><span class="header-section-number">5.2</span> Ajuda na tomada de decisões baseada em dados</h2>
-<p>O R auxilia na interpretação de dados, permitindo transformar informações em conhecimento útil. Com isso, contribui para decisões mais embasadas e seguras em diferentes áreas. Empresas e instituições utilizam essa capacidade para planejar estratégias. Dessa forma, reduz incertezas e melhora resultados.</p>
+<section id="algumas-caracteristicas-do-r" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="algumas-caracteristicas-do-r"><span class="header-section-number">3.5</span> Algumas caracteristicas do R</h2>
+<section id="software-livre-e-de-codigo-aberto" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="software-livre-e-de-codigo-aberto"><span class="header-section-number">3.5.1</span> Software Livre e de Codigo Aberto</h3>
+<p>A linguagem R é distribuída sob a licença GNU GPL (General Public License), o que a caracteriza como um software livre. Isso implica que qualquer usuário possui a liberdade de executar, copiar, distribuir, estudar e alterar o código-fonte. Por ser de código aberto, o R beneficia-se de um desenvolvimento colaborativo global.</p>
 </section>
-<section id="influência-no-desenvolvimento-tecnológico" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="influência-no-desenvolvimento-tecnológico"><span class="header-section-number">5.3</span> Influência no desenvolvimento tecnológico</h2>
-<p>A linguagem R também influencia o avanço tecnológico ao apoiar o desenvolvimento de novas soluções baseadas em dados. Ela é utilizada em áreas como inteligência artificial e análise de grandes volumes de informação. Isso contribui para inovação em diversos setores. Assim, o R participa diretamente da evolução tecnológica atual.</p>
+<section id="escopo-léxico" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="escopo-léxico"><span class="header-section-number">3.5.2</span> Escopo Léxico</h3>
+<p>O R utiliza o escopo léxico (lexical scoping) como protocolo para a busca de valores de símbolos. Nessa convenção, a associação entre um nome e seu valor é determinada pelo ambiente em que a função foi criada, e não onde ela é chamada. Na prática, quando o R encontra um objeto, ele realiza uma busca sequencial: inicia no ambiente interno (local), avança para os ambientes superiores e encerra no ambiente global.Pensa como se tivesse um robozinho que ta buscando algo, esse robozinho está dentro de varias caixas. Ele vai olhando pra cima e vai saindo das caixas até ele achar oque precisa. E nesse caso as caixas são as funções, ele indo de ambiente em ambiente até achar oque quer.</p>
 </section>
-</section>
-<section id="considerações-finais-sobre-o-r" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> 🏁 Considerações Finais sobre o R</h1>
-<section id="a-importância-histórica-e-atual" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="a-importância-histórica-e-atual"><span class="header-section-number">6.1</span> A importância histórica e atual</h2>
-<p>A linguagem R apresentou uma evolução significativa desde sua criação, passando de uma ferramenta acadêmica para uma referência global. Sua proposta inicial de ser acessível e flexível contribuiu para seu crescimento contínuo. Ao longo do tempo, consolidou-se como uma das principais linguagens para análise de dados. Assim, mantém sua relevância tanto no passado quanto no presente.</p>
-</section>
-<section id="visão-geral-do-papel-da-linguagem-r-hoje" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="visão-geral-do-papel-da-linguagem-r-hoje"><span class="header-section-number">6.2</span> Visão geral do papel da linguagem R hoje</h2>
-<p>Atualmente, o R ocupa uma posição importante no cenário tecnológico e científico. Ele é amplamente utilizado em diversas áreas que dependem da análise de dados. Sua comunidade ativa e constante atualização garantem sua continuidade. Dessa forma, permanece como uma ferramenta essencial na era da informação.</p>
+<section id="linguagem-interpretada" class="level3" data-number="3.5.3">
+<h3 data-number="3.5.3" class="anchored" data-anchor-id="linguagem-interpretada"><span class="header-section-number">3.5.3</span> Linguagem Interpretada</h3>
+<p>O R é classificado como uma linguagem interpretada, o que significa que as instruções são executadas diretamente por um interpretador, linha por linha, sem a necessidade de uma etapa prévia de compilação em código de máquina. Para o pesquisador, essa funcionalidade permite uma análise exploratória de dados mais ágil, uma vez que os resultados de cada comando podem ser validados imediatamente no console, facilitando a depuração e o desenvolvimento incremental de scripts.</p>
 </section>
 </section>
-<section id="conclusão" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> 🧠 Conclusão</h1>
-<p>Diante do que foi apresentado, é possível concluir que a R se consolidou como uma ferramenta de grande relevância ao longo do tempo, passando de um projeto acadêmico para uma linguagem amplamente utilizada em diversas áreas. Sua evolução, aliada ao caráter acessível e colaborativo, contribuiu para sua expansão e fortalecimento tanto na academia quanto no mercado.</p>
-<p>Além disso, o trabalho tenta mostrar uma visão geral da linguagem R, destacando sua importância, seu contexto histórico e seu papel na atualidade. Dessa forma, fica evidente que o R é uma ferramenta essencial na era dos dados, auxiliando na análise de informações e na tomada de decisões, sendo cada vez mais importante no desenvolvimento científico e tecnológico.</p>
-<section id="referências" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="referências"><span class="header-section-number">7.1</span> Referências</h2>
-<p>[1] <em>R CORE TEAM. R: A language and environment for statistical computing.</em> Disponível em: <a href="https://www.r-project.org/" class="uri">https://www.r-project.org/</a>.</p>
-<p>[2] <em>GeeksforGeeks – R Programming.</em> Disponível em: <a href="https://www.geeksforgeeks.org/r-programming-language-introduction/" class="uri">https://www.geeksforgeeks.org/r-programming-language-introduction/</a>.</p>
+</section>
+<section id="comandos-básicos-do-r" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Comandos Básicos do R</h1>
+<section id="atribuição-de-valores" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="atribuição-de-valores"><span class="header-section-number">4.1</span> Atribuição de Valores</h2>
+<p>No R, a atribuição de valores a objetos é realizada primordialmente através do operador &lt;- (seta para a esquerda). Embora o sinal de igual (=) também funcione, o uso da seta é a convenção padrão da linguagem, permitindo que o interpretador armazene dados na memória sob um identificador específico para uso posterior.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">10</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="operações-matemáticas" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="operações-matemáticas"><span class="header-section-number">4.2</span> Operações Matemáticas</h2>
+<p>A linguagem suporta as operações aritméticas padrão de forma nativa. O interpretador respeita a ordem de precedência matemática para adição (+), subtração (-), multiplicação (*) e divisão (/). Tais operações podem ser aplicadas tanto a valores escalares quanto a vetores e matrizes.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>x <span class="sc">+</span> y</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>x <span class="sc">*</span> y</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>x <span class="sc">/</span> y</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="exibir-valores" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="exibir-valores"><span class="header-section-number">4.3</span> Exibir Valores</h2>
+<p>A função print() é utilizada para exibir o conteúdo de um objeto no console. Embora digitar apenas o nome do objeto também retorne seu valor no console interativo, o uso explícito de print() é uma boa prática dentro de scripts estruturados e funções para garantir a saída dos dados.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="sequências" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="sequências"><span class="header-section-number">4.4</span> Sequências</h2>
+<p>O operador dois-pontos (:) é uma forma simplificada de gerar sequências regulares de números inteiros. O comando 1:10, por exemplo, cria um vetor contendo todos os números de 1 a 10 com incremento unitário. Para sequências mais complexas com intervalos específicos, utiliza-se a função seq().</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="funções-simples" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="funções-simples"><span class="header-section-number">4.5</span> Funções Simples</h2>
+<p>Funções no R são chamadas pelo nome seguido de parênteses, que delimitam os argumentos.</p>
+<p>sqrt(): Calcula a raiz quadrada de um valor numérico.</p>
+<p>mean(): Calcula a média aritmética. No exemplo, a função c() (combine) é utilizada dentro da mean() para agrupar os números em um vetor, visto que a função de média exige um conjunto de dados como entrada.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">16</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>))</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="referências" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="referências"><span class="header-section-number">4.6</span> Referências</h2>
+<p>[1] <em>R CORE TEAM. R: A language and environment for statistical computing.</em> Disponível em: <a href="https://www.r-project.org/" class="uri">https://www.r-project.org/</a>. . março. Acesso em: 30 de2026.</p>
+<p>[2] <em>GeeksforGeeks – R Programming.</em> Disponível em: <a href="https://www.geeksforgeeks.org/r-programming-language-introduction/" class="uri">https://www.geeksforgeeks.org/r-programming-language-introduction/</a> . Acesso em: 30 de março. 2026.</p>
+<p>[3] <em>Rapidinhas do R, R basico da pagina do Professor Ben Deivide</em> Disponível em: <a href="https://bendeivide.github.io/#featured" class="uri">https://bendeivide.github.io/#featured</a> . Acesso em: 12 de março. 2026</p>
 <!-- -->
 
 </section>
@@ -699,111 +718,183 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Código fonte</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Daniel de Freitas e Marcos Vinicius"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Relatório da linguagem R"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> referencias.bib</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">link-citations:</span><span class="co"> true</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">csl:</span><span class="co"> associacao-brasileira-de-normas-tecnicas-ipea.csl</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "&lt;a href='https://bendeivide.github.io/courses/epaec/' target='_blank'&gt;Estatística e Probabilidade&lt;/a&gt; &lt;/br&gt; &lt;a href='https://bendeivide.github.io' target='_blank'&gt;Prof. Ben Dêivide (DEFIM/CAP/UFSJ)&lt;/a&gt;"</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="an">include-before-body:</span><span class="co"> header.html</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> now</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> "DD/MM/YYYY, HH:mm"</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> pt-BR</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">    number-sections: true</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">    theme: bootstrap</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">    #css: styles.css</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: true</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: false</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">  message: false</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu"># 📌 Introdução</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  A linguagem R é amplamente utilizada em áreas como estatística, ciência de dados e pesquisa acadêmica, destacando-se pela sua capacidade de manipulação, análise e visualização de dados. Desenvolvida inicialmente por Ross Ihaka e Robert Gentleman, ela se consolidou como uma das principais ferramentas para profissionais e estudantes que lidam com grandes volumes de informação e necessitam de métodos eficientes para interpretação de resultados.</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  Este trabalho tem como objetivo apresentar os conceitos fundamentais da linguagem R, explorando suas principais funcionalidades, aplicações e vantagens no contexto da análise de dados.</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu"># ❓  Contextualização da Linguagem </span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contexto em que a linguagem foi criada</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>  A linguagem R surgiu na década de 1990, em um período em que havia grande demanda por ferramentas estatísticas mais acessíveis. Muitos softwares existentes eram pagos e pouco flexíveis para pesquisa. Assim, pesquisadores buscavam alternativas que permitissem maior liberdade e adaptação. Nesse cenário, o R apareceu como uma solução livre e eficiente.</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## Quem criou: Ross Ihaka e Robert Gentleman</span></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>  O R foi desenvolvido por Ross Ihaka e Robert Gentleman, professores da Universidade de Auckland, na Nova Zelândia. Eles criaram a linguagem com o objetivo de facilitar o ensino e a prática da estatística. Inicialmente voltado ao meio acadêmico, o projeto rapidamente ganhou reconhecimento. Com o tempo, passou a ser utilizado mundialmente.</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="fu">## Relação com outras linguagens anteriores</span></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>  A linguagem R foi fortemente inspirada na linguagem S, já utilizada para análise estatística. Ela herdou diversas ideias e estruturas dessa linguagem. No entanto, trouxe como diferencial o fato de ser gratuita e de código aberto. Isso permitiu sua rápida evolução e ampla adoção.</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="fu"># 💻 Evolução ao Longo do Tempo da R</span></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="fu">## Crescimento da linguagem no meio acadêmico</span></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>  Após sua criação, o R foi rapidamente adotado por universidades e centros de pesquisa. Sua facilidade de uso e caráter gratuito favoreceram sua disseminação entre estudantes e professores. Além disso, a possibilidade de criar e compartilhar pacotes contribuiu para seu crescimento. Com isso, tornou-se uma das principais ferramentas acadêmicas.</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="fu">## Expansão para outras áreas além da estatística</span></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>  Com o tempo, o uso do R deixou de ser exclusivo da estatística. Ele passou a ser utilizado em áreas como engenharia, economia, biologia e ciência de dados. Essa expansão ocorreu devido à sua versatilidade e capacidade de lidar com diferentes tipos de dados. Assim, ganhou espaço em diversos setores profissionais.</span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="fu">## Popularização com o avanço da tecnologia e dos dados</span></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>  O crescimento da produção de dados impulsionou ainda mais a popularidade do R. Com a era do big data, ferramentas capazes de analisar grandes volumes de informação se tornaram essenciais. Nesse contexto, o R se destacou como uma opção poderosa e acessível. Isso contribuiu para sua consolidação no mercado e na academia.</span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="fu"># 🌐 Importância da Linguagem R</span></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="fu">## Por que ela se tornou relevante</span></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>  A linguagem R se tornou relevante por oferecer uma ferramenta gratuita, poderosa e acessível para análise de dados. Sua flexibilidade permite que usuários adaptem o ambiente conforme suas necessidades. Além disso, a grande quantidade de recursos disponíveis facilita seu uso em diferentes contextos. Isso contribuiu para sua ampla adoção ao longo do tempo.</span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="fu">## Papel na era dos dados</span></span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>  Na era atual, marcada pela grande produção de dados, o R desempenha um papel fundamental. Ele permite organizar, interpretar e extrair informações úteis de grandes volumes de dados. Dessa forma, auxilia na tomada de decisões em diversas áreas. Assim, tornou-se uma ferramenta essencial no cenário tecnológico e científico moderno.</span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="fu"># ☕️ Impacto na Ciência e Tecnologia do R</span></span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contribuição para pesquisas científicas</span></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>  A linguagem R tem grande importância no desenvolvimento de pesquisas científicas. Ela permite a análise de dados de forma precisa e confiável, sendo amplamente utilizada em estudos acadêmicos. Além disso, facilita a reprodução de resultados, o que é essencial na ciência. Por isso, é muito presente em universidades e centros de pesquisa.</span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ajuda na tomada de decisões baseada em dados</span></span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>  O R auxilia na interpretação de dados, permitindo transformar informações em conhecimento útil. Com isso, contribui para decisões mais embasadas e seguras em diferentes áreas. Empresas e instituições utilizam essa capacidade para planejar estratégias. Dessa forma, reduz incertezas e melhora resultados.</span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="fu">## Influência no desenvolvimento tecnológico</span></span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>  A linguagem R também influencia o avanço tecnológico ao apoiar o desenvolvimento de novas soluções baseadas em dados. Ela é utilizada em áreas como inteligência artificial e análise de grandes volumes de informação. Isso contribui para inovação em diversos setores. Assim, o R participa diretamente da evolução tecnológica atual.</span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="fu"># 🏁 Considerações Finais sobre o R</span></span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="fu">## A importância histórica e atual</span></span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>A linguagem R apresentou uma evolução significativa desde sua criação, passando de uma ferramenta acadêmica para uma referência global. Sua proposta inicial de ser acessível e flexível contribuiu para seu crescimento contínuo. Ao longo do tempo, consolidou-se como uma das principais linguagens para análise de dados. Assim, mantém sua relevância tanto no passado quanto no presente.</span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="fu">## Visão geral do papel da linguagem R hoje</span></span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>Atualmente, o R ocupa uma posição importante no cenário tecnológico e científico. Ele é amplamente utilizado em diversas áreas que dependem da análise de dados. Sua comunidade ativa e constante atualização garantem sua continuidade. Dessa forma, permanece como uma ferramenta essencial na era da informação.</span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="fu"># 🧠 Conclusão</span></span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>  Diante do que foi apresentado, é possível concluir que a R se consolidou como uma ferramenta de grande relevância ao longo do tempo, passando de um projeto acadêmico para uma linguagem amplamente utilizada em diversas áreas. Sua evolução, aliada ao caráter acessível e colaborativo, contribuiu para sua expansão e fortalecimento tanto na academia quanto no mercado.</span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>  Além disso, o trabalho tenta mostrar uma visão geral da linguagem R, destacando sua importância, seu contexto histórico e seu papel na atualidade. Dessa forma, fica evidente que o R é uma ferramenta essencial na era dos dados, auxiliando na análise de informações e na tomada de decisões, sendo cada vez mais importante no desenvolvimento científico e tecnológico.</span>
-<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="fu">## Referências</span></span>
-<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">1</span><span class="co">]</span> *R CORE TEAM. R: A language and environment for statistical computing.* Disponível em: <span class="ot">&lt;https://www.r-project.org/&gt;</span>.</span>
-<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">2</span><span class="co">]</span> *GeeksforGeeks – R Programming.* Disponível em: <span class="ot">&lt;https://www.geeksforgeeks.org/r-programming-language-introduction/&gt;</span>.</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Daniel de Freitas e Marcos Vinicius"</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Relatório da linguagem R"</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> referencias.bib</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="an">link-citations:</span><span class="co"> true</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="an">csl:</span><span class="co"> associacao-brasileira-de-normas-tecnicas-ipea.csl</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "&lt;a href='https://bendeivide.github.io/courses/epaec/' target='_blank'&gt;Estatística e Probabilidade&lt;/a&gt; &lt;/br&gt; &lt;a href='https://bendeivide.github.io' target='_blank'&gt;Prof. Ben Dêivide (DEFIM/CAP/UFSJ)&lt;/a&gt;"</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="an">include-before-body:</span><span class="co"> header.html</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> now</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> "DD/MM/YYYY, HH:mm"</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> pt-BR</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="co">    number-sections: true</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="co">    theme: bootstrap</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="co">    #css: styles.css</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: true</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: false</span></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a><span class="co">  message: false</span></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a><span class="fu"># introdução ao R e ao GitHub</span></span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>  O R é uma linguagem de programação voltada para análise de dados, estatística e geração de gráficos. Ele é muito utilizado em pesquisas científicas e na área de ciência de dados.</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>  O GitHub é uma plataforma online usada para armazenar e compartilhar códigos. Ele permite salvar versões de projetos, colaborar com outras pessoas e manter um histórico das alterações feitas no código.</span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>  O objetivo desse trabalho é que o leitor consiga entender e utilizar o  RStudio e a linguagem R, mesmo que de uma maneira leiga.</span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a><span class="fu"># Historia do R</span></span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a> A linguagem R é uma variante da Linguagem S, concebida em 1991 por Ross Ihaka e Robert Gentleman no Departamento de Estatística da Universidade de Auckland, na Nova Zelândia.</span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>  Diferente de softwares proprietários, o R nasceu de um esforço colaborativo global, unindo desenvolvedores de diversas partes do mundo em prol de uma ferramenta aberta e robusta. Embora seu desenvolvimento tenha começado no início da década de 90, a linguagem foi apresentada oficialmente ao público apenas em 1993.</span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a><span class="fu"># Como Baixar o RStudio e o R</span></span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a><span class="fu">## O primeiro passo é instalar o R:</span></span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a>Acesse o site oficial: https://cran.r-project.org . Na página inicial, escolha o seu sistema operacional: Windows, Mac(macOS), Linux</span>
+<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a>Em seguida, clique no link para baixar a versão mais recente</span>
+<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a>Após o download: Abra o arquivo baixado, siga os passos de instalação (pode deixar todas as opções padrão). Clique em “Next” até concluir</span>
+<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a> O R será instalado no seu computador e já poderá ser utilizado, porém ainda sem uma interface muito amigável.</span>
+<span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb7-53"><a href="#cb7-53" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a><span class="fu">## Instalação do RStudio</span></span>
+<span id="cb7-55"><a href="#cb7-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-56"><a href="#cb7-56" aria-hidden="true" tabindex="-1"></a>  Depois de instalar o R, é necessário instalar o RStudio:</span>
+<span id="cb7-57"><a href="#cb7-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-58"><a href="#cb7-58" aria-hidden="true" tabindex="-1"></a>Acesse: https://posit.co/download/rstudio-desktop/ . Role a página até a opção RStudio Desktop, clique em download na versão gratuita, escolha o seu sistema operacional novamente</span>
+<span id="cb7-59"><a href="#cb7-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-60"><a href="#cb7-60" aria-hidden="true" tabindex="-1"></a>  Após baixar:</span>
+<span id="cb7-61"><a href="#cb7-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-62"><a href="#cb7-62" aria-hidden="true" tabindex="-1"></a>Abra o instalador</span>
+<span id="cb7-63"><a href="#cb7-63" aria-hidden="true" tabindex="-1"></a>Siga as instruções recomendado que mantenha tudo no padrão</span>
+<span id="cb7-64"><a href="#cb7-64" aria-hidden="true" tabindex="-1"></a>Finalize a instalação</span>
+<span id="cb7-65"><a href="#cb7-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-66"><a href="#cb7-66" aria-hidden="true" tabindex="-1"></a>  Agora para testar se foi tudo feito corretamente. Será necessario usar o console. Mas antes irei te explicar oque é exatamente o console.</span>
+<span id="cb7-67"><a href="#cb7-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-68"><a href="#cb7-68" aria-hidden="true" tabindex="-1"></a><span class="fu">## O Console</span></span>
+<span id="cb7-69"><a href="#cb7-69" aria-hidden="true" tabindex="-1"></a>  Imagine que você está em um restaurante. O RStudio é a cozinha inteira, mas o Console é o balcão de atendimento direto: o lugar onde você faz o pedido e recebe o prato na hora.</span>
+<span id="cb7-70"><a href="#cb7-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-71"><a href="#cb7-71" aria-hidden="true" tabindex="-1"></a><span class="fu">### O que é o Console?</span></span>
+<span id="cb7-72"><a href="#cb7-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-73"><a href="#cb7-73" aria-hidden="true" tabindex="-1"></a>  O Console é o "coração" do RStudio. É o local onde o computador realmente processa os seus comandos. Quando você digita algo lá e aperta Enter, o R executa aquela instrução imediatamente e te mostra o resultado logo abaixo.</span>
+<span id="cb7-74"><a href="#cb7-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-75"><a href="#cb7-75" aria-hidden="true" tabindex="-1"></a><span class="fu">### Como funciona</span></span>
+<span id="cb7-76"><a href="#cb7-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-77"><a href="#cb7-77" aria-hidden="true" tabindex="-1"></a>  Você verá um símbolo de "maior que" &gt; no canto inferior esquerdo. Esse é o Prompt.</span>
+<span id="cb7-78"><a href="#cb7-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-79"><a href="#cb7-79" aria-hidden="true" tabindex="-1"></a>  O Prompt &gt;: É como se o console estivesse pedindo o comando, ali que você deve digitar.</span>
+<span id="cb7-80"><a href="#cb7-80" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb7-81"><a href="#cb7-81" aria-hidden="true" tabindex="-1"></a>  O Sinal de Mais (+): Se você apertar Enter e aparecer um + em vez de um &gt;, significa que o R acha que seu comando está incompleto.</span>
+<span id="cb7-82"><a href="#cb7-82" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb7-83"><a href="#cb7-83" aria-hidden="true" tabindex="-1"></a>  Você pode usar ele como laboratorio de testes e calculadora instantânea.</span>
+<span id="cb7-84"><a href="#cb7-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-85"><a href="#cb7-85" aria-hidden="true" tabindex="-1"></a>  Agora sabendo oque é o console. Vamos testar se você instalou o RStudio e a linguagem R certinho.</span>
+<span id="cb7-86"><a href="#cb7-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-87"><a href="#cb7-87" aria-hidden="true" tabindex="-1"></a><span class="fu">## Verificando se a instalação deu certo</span></span>
+<span id="cb7-88"><a href="#cb7-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-89"><a href="#cb7-89" aria-hidden="true" tabindex="-1"></a>  Após instalar os dois programas:</span>
+<span id="cb7-90"><a href="#cb7-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-91"><a href="#cb7-91" aria-hidden="true" tabindex="-1"></a>  Abra o RStudio</span>
+<span id="cb7-92"><a href="#cb7-92" aria-hidden="true" tabindex="-1"></a>  No console (parte inferior da tela), digite:</span>
+<span id="cb7-93"><a href="#cb7-93" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb7-94"><a href="#cb7-94" aria-hidden="true" tabindex="-1"></a> <span class="in">```r</span></span>
+<span id="cb7-95"><a href="#cb7-95" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"R funcionando!"</span>)</span>
+<span id="cb7-96"><a href="#cb7-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-97"><a href="#cb7-97" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-98"><a href="#cb7-98" aria-hidden="true" tabindex="-1"></a><span class="fu">## Algumas caracteristicas do R</span></span>
+<span id="cb7-99"><a href="#cb7-99" aria-hidden="true" tabindex="-1"></a><span class="fu">### Software Livre e de Codigo Aberto</span></span>
+<span id="cb7-100"><a href="#cb7-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-101"><a href="#cb7-101" aria-hidden="true" tabindex="-1"></a>A linguagem R é distribuída sob a licença GNU GPL (General Public License), o que a caracteriza como um software livre. Isso implica que qualquer usuário possui a liberdade de executar, copiar, distribuir, estudar e alterar o código-fonte. Por ser de código aberto, o R beneficia-se de um desenvolvimento colaborativo global.</span>
+<span id="cb7-102"><a href="#cb7-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-103"><a href="#cb7-103" aria-hidden="true" tabindex="-1"></a><span class="fu">### Escopo Léxico</span></span>
+<span id="cb7-104"><a href="#cb7-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-105"><a href="#cb7-105" aria-hidden="true" tabindex="-1"></a>O R utiliza o escopo léxico (lexical scoping) como protocolo para a busca de valores de símbolos. Nessa convenção, a associação entre um nome e seu valor é determinada pelo ambiente em que a função foi criada, e não onde ela é chamada. Na prática, quando o R encontra um objeto, ele realiza uma busca sequencial: inicia no ambiente interno (local), avança para os ambientes superiores e encerra no ambiente global.Pensa como se tivesse um robozinho que ta buscando algo, esse robozinho está dentro de varias caixas. Ele vai olhando pra cima e vai saindo das caixas até ele achar oque precisa. E nesse caso as caixas são as funções, ele indo de ambiente em ambiente até achar oque quer.</span>
+<span id="cb7-106"><a href="#cb7-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-107"><a href="#cb7-107" aria-hidden="true" tabindex="-1"></a><span class="fu">### Linguagem Interpretada</span></span>
+<span id="cb7-108"><a href="#cb7-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-109"><a href="#cb7-109" aria-hidden="true" tabindex="-1"></a>O R é classificado como uma linguagem interpretada, o que significa que as instruções são executadas diretamente por um interpretador, linha por linha, sem a necessidade de uma etapa prévia de compilação em código de máquina. Para o pesquisador, essa funcionalidade permite uma análise exploratória de dados mais ágil, uma vez que os resultados de cada comando podem ser validados imediatamente no console, facilitando a depuração e o desenvolvimento incremental de scripts.</span>
+<span id="cb7-110"><a href="#cb7-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-111"><a href="#cb7-111" aria-hidden="true" tabindex="-1"></a><span class="fu"># Comandos Básicos do R</span></span>
+<span id="cb7-112"><a href="#cb7-112" aria-hidden="true" tabindex="-1"></a><span class="fu">## Atribuição de Valores</span></span>
+<span id="cb7-113"><a href="#cb7-113" aria-hidden="true" tabindex="-1"></a>No R, a atribuição de valores a objetos é realizada primordialmente através do operador &lt;- (seta para a esquerda). Embora o sinal de igual (=) também funcione, o uso da seta é a convenção padrão da linguagem, permitindo que o interpretador armazene dados na memória sob um identificador específico para uso posterior.</span>
+<span id="cb7-114"><a href="#cb7-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-115"><a href="#cb7-115" aria-hidden="true" tabindex="-1"></a> <span class="in">```r</span></span>
+<span id="cb7-116"><a href="#cb7-116" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb7-117"><a href="#cb7-117" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">10</span></span>
+<span id="cb7-118"><a href="#cb7-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-119"><a href="#cb7-119" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-120"><a href="#cb7-120" aria-hidden="true" tabindex="-1"></a><span class="fu">## Operações Matemáticas</span></span>
+<span id="cb7-121"><a href="#cb7-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-122"><a href="#cb7-122" aria-hidden="true" tabindex="-1"></a>A linguagem suporta as operações aritméticas padrão de forma nativa. O interpretador respeita a ordem de precedência matemática para adição (+), subtração (-), multiplicação (*) e divisão (/). Tais operações podem ser aplicadas tanto a valores escalares quanto a vetores e matrizes.</span>
+<span id="cb7-123"><a href="#cb7-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-124"><a href="#cb7-124" aria-hidden="true" tabindex="-1"></a> <span class="in">```r</span></span>
+<span id="cb7-125"><a href="#cb7-125" aria-hidden="true" tabindex="-1"></a>x <span class="sc">+</span> y</span>
+<span id="cb7-126"><a href="#cb7-126" aria-hidden="true" tabindex="-1"></a>x <span class="sc">*</span> y</span>
+<span id="cb7-127"><a href="#cb7-127" aria-hidden="true" tabindex="-1"></a>x <span class="sc">/</span> y</span>
+<span id="cb7-128"><a href="#cb7-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-129"><a href="#cb7-129" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-130"><a href="#cb7-130" aria-hidden="true" tabindex="-1"></a><span class="fu">## Exibir Valores</span></span>
+<span id="cb7-131"><a href="#cb7-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-132"><a href="#cb7-132" aria-hidden="true" tabindex="-1"></a>A função print() é utilizada para exibir o conteúdo de um objeto no console. Embora digitar apenas o nome do objeto também retorne seu valor no console interativo, o uso explícito de print() é uma boa prática dentro de scripts estruturados e funções para garantir a saída dos dados.</span>
+<span id="cb7-133"><a href="#cb7-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-134"><a href="#cb7-134" aria-hidden="true" tabindex="-1"></a> <span class="in">```r</span></span>
+<span id="cb7-135"><a href="#cb7-135" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)</span>
+<span id="cb7-136"><a href="#cb7-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-137"><a href="#cb7-137" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-138"><a href="#cb7-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-139"><a href="#cb7-139" aria-hidden="true" tabindex="-1"></a><span class="fu">## Sequências</span></span>
+<span id="cb7-140"><a href="#cb7-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-141"><a href="#cb7-141" aria-hidden="true" tabindex="-1"></a>O operador dois-pontos (:) é uma forma simplificada de gerar sequências regulares de números inteiros. O comando 1:10, por exemplo, cria um vetor contendo todos os números de 1 a 10 com incremento unitário. Para sequências mais complexas com intervalos específicos, utiliza-se a função seq().</span>
+<span id="cb7-142"><a href="#cb7-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-143"><a href="#cb7-143" aria-hidden="true" tabindex="-1"></a> <span class="in">```r</span></span>
+<span id="cb7-144"><a href="#cb7-144" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span>
+<span id="cb7-145"><a href="#cb7-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-146"><a href="#cb7-146" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-147"><a href="#cb7-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-148"><a href="#cb7-148" aria-hidden="true" tabindex="-1"></a><span class="fu">## Funções Simples</span></span>
+<span id="cb7-149"><a href="#cb7-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-150"><a href="#cb7-150" aria-hidden="true" tabindex="-1"></a>Funções no R são chamadas pelo nome seguido de parênteses, que delimitam os argumentos.</span>
+<span id="cb7-151"><a href="#cb7-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-152"><a href="#cb7-152" aria-hidden="true" tabindex="-1"></a>sqrt(): Calcula a raiz quadrada de um valor numérico.</span>
+<span id="cb7-153"><a href="#cb7-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-154"><a href="#cb7-154" aria-hidden="true" tabindex="-1"></a>mean(): Calcula a média aritmética. No exemplo, a função c() (combine) é utilizada dentro da mean() para agrupar os números em um vetor, visto que a função de média exige um conjunto de dados como entrada.</span>
+<span id="cb7-155"><a href="#cb7-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-156"><a href="#cb7-156" aria-hidden="true" tabindex="-1"></a> <span class="in">```r</span></span>
+<span id="cb7-157"><a href="#cb7-157" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">16</span>)</span>
+<span id="cb7-158"><a href="#cb7-158" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>))</span>
+<span id="cb7-159"><a href="#cb7-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-160"><a href="#cb7-160" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-161"><a href="#cb7-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-162"><a href="#cb7-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-163"><a href="#cb7-163" aria-hidden="true" tabindex="-1"></a><span class="fu">## Referências</span></span>
+<span id="cb7-164"><a href="#cb7-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-165"><a href="#cb7-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-166"><a href="#cb7-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-167"><a href="#cb7-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-168"><a href="#cb7-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-169"><a href="#cb7-169" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">1</span><span class="co">]</span> *R CORE TEAM. R: A language and environment for statistical computing.* Disponível em: <span class="ot">&lt;https://www.r-project.org/&gt;</span>.</span>
+<span id="cb7-170"><a href="#cb7-170" aria-hidden="true" tabindex="-1"></a>.  março. Acesso em: 30 de2026.</span>
+<span id="cb7-171"><a href="#cb7-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-172"><a href="#cb7-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-173"><a href="#cb7-173" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">2</span><span class="co">]</span> *GeeksforGeeks – R Programming.* Disponível em: <span class="ot">&lt;https://www.geeksforgeeks.org/r-programming-language-introduction/&gt;</span></span>
+<span id="cb7-174"><a href="#cb7-174" aria-hidden="true" tabindex="-1"></a>. Acesso em: 30 de março. 2026.</span>
+<span id="cb7-175"><a href="#cb7-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-176"><a href="#cb7-176" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">3</span><span class="co">]</span> *Rapidinhas do R, R basico da pagina do Professor Ben Deivide* Disponível em: <span class="ot">&lt;https://bendeivide.github.io/#featured&gt;</span></span>
+<span id="cb7-177"><a href="#cb7-177" aria-hidden="true" tabindex="-1"></a>. Acesso em: 12 de março. 2026</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

@@ -24,82 +24,154 @@ execute:
 ---
 
 
-# 📌 Introdução
-  A linguagem R é amplamente utilizada em áreas como estatística, ciência de dados e pesquisa acadêmica, destacando-se pela sua capacidade de manipulação, análise e visualização de dados. Desenvolvida inicialmente por Ross Ihaka e Robert Gentleman, ela se consolidou como uma das principais ferramentas para profissionais e estudantes que lidam com grandes volumes de informação e necessitam de métodos eficientes para interpretação de resultados.
+# introdução ao R e ao GitHub
 
-  Este trabalho tem como objetivo apresentar os conceitos fundamentais da linguagem R, explorando suas principais funcionalidades, aplicações e vantagens no contexto da análise de dados.
+  O R é uma linguagem de programação voltada para análise de dados, estatística e geração de gráficos. Ele é muito utilizado em pesquisas científicas e na área de ciência de dados.
 
-
-# ❓  Contextualização da Linguagem 
-## Contexto em que a linguagem foi criada
-
-  A linguagem R surgiu na década de 1990, em um período em que havia grande demanda por ferramentas estatísticas mais acessíveis. Muitos softwares existentes eram pagos e pouco flexíveis para pesquisa. Assim, pesquisadores buscavam alternativas que permitissem maior liberdade e adaptação. Nesse cenário, o R apareceu como uma solução livre e eficiente.
-
-
-## Quem criou: Ross Ihaka e Robert Gentleman
-
-  O R foi desenvolvido por Ross Ihaka e Robert Gentleman, professores da Universidade de Auckland, na Nova Zelândia. Eles criaram a linguagem com o objetivo de facilitar o ensino e a prática da estatística. Inicialmente voltado ao meio acadêmico, o projeto rapidamente ganhou reconhecimento. Com o tempo, passou a ser utilizado mundialmente.
+  O GitHub é uma plataforma online usada para armazenar e compartilhar códigos. Ele permite salvar versões de projetos, colaborar com outras pessoas e manter um histórico das alterações feitas no código.
   
-## Relação com outras linguagens anteriores
+  O objetivo desse trabalho é que o leitor consiga entender e utilizar o  RStudio e a linguagem R, mesmo que de uma maneira leiga.
 
-  A linguagem R foi fortemente inspirada na linguagem S, já utilizada para análise estatística. Ela herdou diversas ideias e estruturas dessa linguagem. No entanto, trouxe como diferencial o fato de ser gratuita e de código aberto. Isso permitiu sua rápida evolução e ampla adoção.
+# Historia do R
 
-# 💻 Evolução ao Longo do Tempo da R
-## Crescimento da linguagem no meio acadêmico
+ A linguagem R é uma variante da Linguagem S, concebida em 1991 por Ross Ihaka e Robert Gentleman no Departamento de Estatística da Universidade de Auckland, na Nova Zelândia.
 
-  Após sua criação, o R foi rapidamente adotado por universidades e centros de pesquisa. Sua facilidade de uso e caráter gratuito favoreceram sua disseminação entre estudantes e professores. Além disso, a possibilidade de criar e compartilhar pacotes contribuiu para seu crescimento. Com isso, tornou-se uma das principais ferramentas acadêmicas.
-
-## Expansão para outras áreas além da estatística
-
-  Com o tempo, o uso do R deixou de ser exclusivo da estatística. Ele passou a ser utilizado em áreas como engenharia, economia, biologia e ciência de dados. Essa expansão ocorreu devido à sua versatilidade e capacidade de lidar com diferentes tipos de dados. Assim, ganhou espaço em diversos setores profissionais.
+  Diferente de softwares proprietários, o R nasceu de um esforço colaborativo global, unindo desenvolvedores de diversas partes do mundo em prol de uma ferramenta aberta e robusta. Embora seu desenvolvimento tenha começado no início da década de 90, a linguagem foi apresentada oficialmente ao público apenas em 1993.
   
-## Popularização com o avanço da tecnologia e dos dados
-
-  O crescimento da produção de dados impulsionou ainda mais a popularidade do R. Com a era do big data, ferramentas capazes de analisar grandes volumes de informação se tornaram essenciais. Nesse contexto, o R se destacou como uma opção poderosa e acessível. Isso contribuiu para sua consolidação no mercado e na academia.
   
-# 🌐 Importância da Linguagem R
-## Por que ela se tornou relevante
+# Como Baixar o RStudio e o R
+## O primeiro passo é instalar o R:
 
-  A linguagem R se tornou relevante por oferecer uma ferramenta gratuita, poderosa e acessível para análise de dados. Sua flexibilidade permite que usuários adaptem o ambiente conforme suas necessidades. Além disso, a grande quantidade de recursos disponíveis facilita seu uso em diferentes contextos. Isso contribuiu para sua ampla adoção ao longo do tempo.
+Acesse o site oficial: https://cran.r-project.org . Na página inicial, escolha o seu sistema operacional: Windows, Mac(macOS), Linux
   
-## Papel na era dos dados
+Em seguida, clique no link para baixar a versão mais recente
 
-  Na era atual, marcada pela grande produção de dados, o R desempenha um papel fundamental. Ele permite organizar, interpretar e extrair informações úteis de grandes volumes de dados. Dessa forma, auxilia na tomada de decisões em diversas áreas. Assim, tornou-se uma ferramenta essencial no cenário tecnológico e científico moderno.
+Após o download: Abra o arquivo baixado, siga os passos de instalação (pode deixar todas as opções padrão). Clique em “Next” até concluir
+
+ O R será instalado no seu computador e já poderá ser utilizado, porém ainda sem uma interface muito amigável.
+ 
+ 
+## Instalação do RStudio
+
+  Depois de instalar o R, é necessário instalar o RStudio:
+
+Acesse: https://posit.co/download/rstudio-desktop/ . Role a página até a opção RStudio Desktop, clique em download na versão gratuita, escolha o seu sistema operacional novamente
+
+  Após baixar:
+
+Abra o instalador
+Siga as instruções recomendado que mantenha tudo no padrão
+Finalize a instalação
+
+  Agora para testar se foi tudo feito corretamente. Será necessario usar o console. Mas antes irei te explicar oque é exatamente o console.
+
+## O Console
+  Imagine que você está em um restaurante. O RStudio é a cozinha inteira, mas o Console é o balcão de atendimento direto: o lugar onde você faz o pedido e recebe o prato na hora.
+
+### O que é o Console?
+
+  O Console é o "coração" do RStudio. É o local onde o computador realmente processa os seus comandos. Quando você digita algo lá e aperta Enter, o R executa aquela instrução imediatamente e te mostra o resultado logo abaixo.
+
+### Como funciona
+
+  Você verá um símbolo de "maior que" > no canto inferior esquerdo. Esse é o Prompt.
+
+  O Prompt >: É como se o console estivesse pedindo o comando, ali que você deve digitar.
   
-# ☕️ Impacto na Ciência e Tecnologia do R
-## Contribuição para pesquisas científicas
-
-  A linguagem R tem grande importância no desenvolvimento de pesquisas científicas. Ela permite a análise de dados de forma precisa e confiável, sendo amplamente utilizada em estudos acadêmicos. Além disso, facilita a reprodução de resultados, o que é essencial na ciência. Por isso, é muito presente em universidades e centros de pesquisa.
+  O Sinal de Mais (+): Se você apertar Enter e aparecer um + em vez de um >, significa que o R acha que seu comando está incompleto.
   
-## Ajuda na tomada de decisões baseada em dados
+  Você pode usar ele como laboratorio de testes e calculadora instantânea.
 
-  O R auxilia na interpretação de dados, permitindo transformar informações em conhecimento útil. Com isso, contribui para decisões mais embasadas e seguras em diferentes áreas. Empresas e instituições utilizam essa capacidade para planejar estratégias. Dessa forma, reduz incertezas e melhora resultados.
+  Agora sabendo oque é o console. Vamos testar se você instalou o RStudio e a linguagem R certinho.
 
-## Influência no desenvolvimento tecnológico
+## Verificando se a instalação deu certo
 
-  A linguagem R também influencia o avanço tecnológico ao apoiar o desenvolvimento de novas soluções baseadas em dados. Ela é utilizada em áreas como inteligência artificial e análise de grandes volumes de informação. Isso contribui para inovação em diversos setores. Assim, o R participa diretamente da evolução tecnológica atual.
+  Após instalar os dois programas:
+
+  Abra o RStudio
+  No console (parte inferior da tela), digite:
   
-# 🏁 Considerações Finais sobre o R
-## A importância histórica e atual
+ ```r
+print("R funcionando!")
 
-A linguagem R apresentou uma evolução significativa desde sua criação, passando de uma ferramenta acadêmica para uma referência global. Sua proposta inicial de ser acessível e flexível contribuiu para seu crescimento contínuo. Ao longo do tempo, consolidou-se como uma das principais linguagens para análise de dados. Assim, mantém sua relevância tanto no passado quanto no presente.
+```
+## Algumas caracteristicas do R
+### Software Livre e de Codigo Aberto
 
-## Visão geral do papel da linguagem R hoje
+A linguagem R é distribuída sob a licença GNU GPL (General Public License), o que a caracteriza como um software livre. Isso implica que qualquer usuário possui a liberdade de executar, copiar, distribuir, estudar e alterar o código-fonte. Por ser de código aberto, o R beneficia-se de um desenvolvimento colaborativo global.
 
-Atualmente, o R ocupa uma posição importante no cenário tecnológico e científico. Ele é amplamente utilizado em diversas áreas que dependem da análise de dados. Sua comunidade ativa e constante atualização garantem sua continuidade. Dessa forma, permanece como uma ferramenta essencial na era da informação.
+### Escopo Léxico
 
-# 🧠 Conclusão
+O R utiliza o escopo léxico (lexical scoping) como protocolo para a busca de valores de símbolos. Nessa convenção, a associação entre um nome e seu valor é determinada pelo ambiente em que a função foi criada, e não onde ela é chamada. Na prática, quando o R encontra um objeto, ele realiza uma busca sequencial: inicia no ambiente interno (local), avança para os ambientes superiores e encerra no ambiente global.Pensa como se tivesse um robozinho que ta buscando algo, esse robozinho está dentro de varias caixas. Ele vai olhando pra cima e vai saindo das caixas até ele achar oque precisa. E nesse caso as caixas são as funções, ele indo de ambiente em ambiente até achar oque quer.
 
-  Diante do que foi apresentado, é possível concluir que a R se consolidou como uma ferramenta de grande relevância ao longo do tempo, passando de um projeto acadêmico para uma linguagem amplamente utilizada em diversas áreas. Sua evolução, aliada ao caráter acessível e colaborativo, contribuiu para sua expansão e fortalecimento tanto na academia quanto no mercado.
+### Linguagem Interpretada
 
-  Além disso, o trabalho tenta mostrar uma visão geral da linguagem R, destacando sua importância, seu contexto histórico e seu papel na atualidade. Dessa forma, fica evidente que o R é uma ferramenta essencial na era dos dados, auxiliando na análise de informações e na tomada de decisões, sendo cada vez mais importante no desenvolvimento científico e tecnológico.
+O R é classificado como uma linguagem interpretada, o que significa que as instruções são executadas diretamente por um interpretador, linha por linha, sem a necessidade de uma etapa prévia de compilação em código de máquina. Para o pesquisador, essa funcionalidade permite uma análise exploratória de dados mais ágil, uma vez que os resultados de cada comando podem ser validados imediatamente no console, facilitando a depuração e o desenvolvimento incremental de scripts.
+
+# Comandos Básicos do R
+## Atribuição de Valores
+No R, a atribuição de valores a objetos é realizada primordialmente através do operador <- (seta para a esquerda). Embora o sinal de igual (=) também funcione, o uso da seta é a convenção padrão da linguagem, permitindo que o interpretador armazene dados na memória sob um identificador específico para uso posterior.
+
+ ```r
+x <- 5
+y <- 10
+
+```
+## Operações Matemáticas
+
+A linguagem suporta as operações aritméticas padrão de forma nativa. O interpretador respeita a ordem de precedência matemática para adição (+), subtração (-), multiplicação (*) e divisão (/). Tais operações podem ser aplicadas tanto a valores escalares quanto a vetores e matrizes.
+
+ ```r
+x + y
+x * y
+x / y
+
+```
+## Exibir Valores
+
+A função print() é utilizada para exibir o conteúdo de um objeto no console. Embora digitar apenas o nome do objeto também retorne seu valor no console interativo, o uso explícito de print() é uma boa prática dentro de scripts estruturados e funções para garantir a saída dos dados.
+
+ ```r
+print(x)
+
+```
+
+## Sequências
+
+O operador dois-pontos (:) é uma forma simplificada de gerar sequências regulares de números inteiros. O comando 1:10, por exemplo, cria um vetor contendo todos os números de 1 a 10 com incremento unitário. Para sequências mais complexas com intervalos específicos, utiliza-se a função seq().
+
+ ```r
+1:10
+
+```
+
+## Funções Simples
+
+Funções no R são chamadas pelo nome seguido de parênteses, que delimitam os argumentos.
+
+sqrt(): Calcula a raiz quadrada de um valor numérico.
+
+mean(): Calcula a média aritmética. No exemplo, a função c() (combine) é utilizada dentro da mean() para agrupar os números em um vetor, visto que a função de média exige um conjunto de dados como entrada.
+
+ ```r
+sqrt(16)
+mean(c(1, 2, 3, 4))
+
+```
+
 
 ## Referências
 
 
 
 
+
 [1] *R CORE TEAM. R: A language and environment for statistical computing.* Disponível em: <https://www.r-project.org/>.
+.  março. Acesso em: 30 de2026.
 
 
-[2] *GeeksforGeeks – R Programming.* Disponível em: <https://www.geeksforgeeks.org/r-programming-language-introduction/>.
+[2] *GeeksforGeeks – R Programming.* Disponível em: <https://www.geeksforgeeks.org/r-programming-language-introduction/>
+. Acesso em: 30 de março. 2026.
+
+[3] *Rapidinhas do R, R basico da pagina do Professor Ben Deivide* Disponível em: <https://bendeivide.github.io/#featured>
+. Acesso em: 12 de março. 2026
