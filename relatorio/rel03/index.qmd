@@ -71,19 +71,22 @@ Essas variaveis representam
 
 # Análise Descritiva
 
-## Tabela de frequência
+## Tabela de frequência sem agrupamento
 
 Utilizando o pacote ´leem´:
 
 ```{r}
-#| echo: true
-
-#| echo: true
+#atribuir o pacote leem
 library(leem)
-dados<- read.csv2("dados.csv")
-names(dados)
-tab<- new_leem(dados$distancia)
-tabfreq(tab)
+#ler os dados
+leitura<-read.csv2(dados.csv)
+#pegar a coluna 2
+dados<-leitura[,2]
+#criar objeto new leem
+objetonl<- new_leem(dist)
+#tabela de frequencia sem agrupamento
+tabfreq(objetonl)
+
 
 ```
 
