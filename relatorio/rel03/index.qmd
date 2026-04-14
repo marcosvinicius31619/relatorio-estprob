@@ -76,27 +76,201 @@ Essas variaveis representam
 Utilizando o pacote ´leem´:
 
 ```{r}
+#| echo: true
 #atribuir o pacote leem
 library(leem)
 #ler os dados
-leitura<-read.csv2(dados.csv)
+leitura<-read.csv2("dados.csv")
 #pegar a coluna 2
 dados<-leitura[,2]
 #criar objeto new leem
-objetonl<- new_leem(dist)
+objetonl<- new_leem(dados)
 #tabela de frequencia sem agrupamento
 tabfreq(objetonl)
 
 
 ```
+Isso permite observar:
 
-- Materiais utilizados  
-- Procedimento  
-- Número de repetições  
+* Frequência absoluta
+* Frequência relativa
+* Frequência acumulada
+
+### Tabela de frequência com agrupamento
+
+```{r}
+#| echo: true
+
+#atribuir o pacote leem
+
+library(leem)
+
+#ler os dados
+
+leitura<-read.csv2("dados.csv")
+
+#pegar a segunda coluna
+
+dados<-leitura[,2]
+
+#distribuição de frequencia
+
+dadosnl<-new_leem(dados, variable = "continuous")
+
+#tabela de frequencia com agrupamento
+
+tabfreq(dadosnl)
+
+```
+# Representação gráfica
+
+## Grafico de barras
+
+```{r}
+#| echo: true
+
+#atribuir o pacote leem
+
+library(leem)
+
+#ler os dados
+
+leitura<-read.csv2("dados.csv")
+
+#pegar a segunda coluna
+
+dados<-leitura[,2]
+
+#distribuição de frequencia
+
+dadosnl<-new_leem(dados, variable = "continuous")
+
+#representação grafica em barras
+
+aux1<-tabfreq(dadosnl)
+barplot(aux1, barcol = heat.colors(5))
+
+```
+
+## Poligono de frequencia
+
+```{r}
+#| echo: true
+
+#atribuir o pacote leem
+
+library(leem)
+
+#ler os dados
+
+leitura<-read.csv2("dados.csv")
+
+#pegar a segunda coluna
+
+dados<-leitura[,2]
+
+#distribuição de frequencia
+
+dadosnl<-new_leem(dados, variable = "continuous")
+
+#Poligono de frequencia
+
+aux1<-tabfreq(dadosnl)
+polyfreq(aux1, barcol = heat.colors(5), main = "poligonos de frequencias e histograma de frequencias")
+```
+
+## Grafico de pizza
+
+```{r}
+#| echo: true
+
+#atribuir o pacote leem
+
+library(leem)
+
+#ler os dados
+
+leitura<-read.csv2("dados.csv")
+
+#pegar a segunda coluna
+
+dados<-leitura[,2]
+
+#distribuição de frequencia
+
+dadosnl<-new_leem(dados, variable = "continuous")
+
+#Poligono de frequencia
+
+aux1<-tabfreq(dadosnl)
+piechart(aux1, main = "Grafico de pizza" )
+```
+
+### Analise dos graficos
+
+Como podemos ver, os graficos mostram que em uma determinada classe (322.0 até 340.8), temos uma frequencia muito grande, uma massa muito grande de dados nessa região.
+
+Observamos tambem:
+* Há dados extremos, por exemplo na 1 classe;
+* Se observa uma distribuição assimetrica, com concentração maior em classes maiores;
+
 
 ---
 
-## 🔍 Resultados e Discussão
+## Medidas Estatisticas
+
+### Medidas de posição
+
+* Média
+* Mediana
+
+```{r}
+#| echo: true
+
+#atribuir o pacote leem
+
+library(leem)
+
+#ler os dados
+
+leitura<-read.csv2("dados.csv")
+
+#pegar a segunda coluna
+
+dados<-leitura[,2]
+
+#Medidas de posição
+
+mean(dados)
+median(dados)
+```
+### Medidas de Dispersão
+
+* Variância
+* Desvio padrão
+* Amplitude
+
+```{r}
+#| echo: true
+
+#atribuir o pacote leem
+
+library(leem)
+
+#ler os dados
+
+leitura<-read.csv2("dados.csv")
+
+#pegar a segunda coluna
+
+dados<-leitura[,2]
+
+#Medidas de dispersão
+var(dados)
+sd(dados)
+range(dados)
+
+```
 
 Apresente e interprete os resultados obtidos a partir dos dados coletados.
 
