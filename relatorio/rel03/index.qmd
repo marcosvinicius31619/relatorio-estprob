@@ -136,7 +136,8 @@ Por outro lado, os dados agrupados tornam a análise muito mais clara, especialm
 
 De maneira bem geral:
 
-Se a precisão for essencial -> usar dados não agrupados
+Se a precisão for essencial -> usar dados não agrupados. 
+
 Se a visualização e síntese forem mais importantes -> usar dados agrupados
 
 # Representação gráfica
@@ -228,11 +229,10 @@ piechart(aux1, main = "Grafico de pizza" )
 Como podemos ver, os graficos mostram que em uma determinada classe (322.0 até 340.8), temos uma frequencia muito grande, uma massa muito grande de dados nessa região.
 
 Observamos tambem:
+
 * Há dados extremos, por exemplo na 1 classe;
 * Se observa uma distribuição assimetrica, com concentração maior em classes maiores;
 
-
----
 
 ## Medidas Estatisticas
 
