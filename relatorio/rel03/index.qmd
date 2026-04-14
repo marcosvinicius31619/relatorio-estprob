@@ -1,6 +1,6 @@
 ---
 # Só mude aqui!!!!
-author: "Nome do Aluno"
+author: "Marcos Vinicius e Daniel de Freitas"
 title: "Relatório de Aula Prática 03"
 bibliography: referencias.bib
 # A partir daqui nao faca alteracoes!!!!!
@@ -26,49 +26,66 @@ execute:
 ---
 
 
-## 📌 Introdução
+# 📌 Introdução
 
-Descreva o contexto da prática e sua importância.
+Neste trabalho, foi realizado um experimento utilizando uma catapulta com o objetivo de analisar estatisticamente as variações de distâncias em que ela lança uma determinada bolinha.
 
-> Exemplo: análise da variabilidade em experimentos físicos utilizando uma catapulta.
+A turma foi dividida em dois grandes grupos, e cada grupo realizou 40 lançamentos, totalizando 40 observações por grupo.
 
+Cada grupo trabalhou com uma configuração diferente das fontes de variação (A+, A-, O-, B+), permitindo comparar como essas variações influenciam os resultados.
 
+O foco do relatório é aplicar conceitos de estatística descritiva, incluindo:
 
-## 🎯 Objetivos
-
-### Objetivo geral
-
-Descrever o objetivo principal da prática.
-
-### Objetivos específicos
-
-- Coletar dados experimentais  
-- Aplicar estatística descritiva  
-- Construir gráficos  
-- Interpretar resultados  
+* Tabelas de frequência
+* Gráficos
+* Medidas de posição e dispersão
+* Assimetria e curtose
 
 ---
 
-## 📚  Fundamentação Teórica
+# 📚  Metodologia
 
-Apresente os conceitos principais:
 
-- Média
-- Variância
-- Desvio padrão
-- Amostragem
+## Organização dos dados
 
-$$
-\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
-$$
+Cada grupo realizou:
 
----
+* 40 lançamentos;
+* Medição da distância (em cm).
 
-## ⚙️ Metodologia
+Os dados foram organizados em um arquivo .csv e analisados no software R, utilizando o pacote:
+```r
+library(leem)
+```
+## Configurações experimentais
 
-::: {.callout-note}
-Descreva como o experimento foi realizado.
-:::
+Cada grupo utilizou uma configuração diferente das variaveis do experimento.
+
+* A+ A- O- B+
+Essas variaveis representam 
+* A+, local onde o elastico é preso no braço da catapulta; nivel 2
+* A-, nivel de pressão do elastico; nive 4
+* O-, local onde a bolinha é colocada; nivel 1
+* B+, angulação do braço que segura o local de por a bolinha. 100°
+
+
+# Análise Descritiva
+
+## Tabela de frequência
+
+Utilizando o pacote ´leem´:
+
+```{r}
+#| echo: true
+
+#| echo: true
+library(leem)
+dados<- read.csv2("dados.csv")
+names(dados)
+tab<- new_leem(dados$distancia)
+tabfreq(tab)
+
+```
 
 - Materiais utilizados  
 - Procedimento  
