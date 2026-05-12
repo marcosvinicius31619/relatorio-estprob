@@ -25,7 +25,7 @@ execute:
 ---
 
 
-## 📌 Introdução
+## Introdução
 
 A Estatística e a Probabilidade possuem grande importância na análise de fenômenos aleatórios presentes em diversas áreas, especialmente na computação, engenharia e ciências aplicadas. As distribuições de probabilidade permitem modelar matematicamente situações incertas e calcular as chances de ocorrência de determinados eventos, sendo fundamentais para a tomada de decisões baseada em dados.
 
@@ -35,7 +35,7 @@ O objetivo deste trabalho é apresentar as características e aplicações dessa
 . Além disso, serão exploradas outras distribuições discretas e contínuas, ampliando o entendimento sobre a modelagem estatística e suas aplicações práticas
 
 
-## ⚙️ Metodologia
+## Metodologia
 
 Neste trabalho foi utilizada uma abordagem teórica e computacional para o estudo das distribuições de probabilidade discretas e contínuas. Inicialmente, realizou-se uma revisão conceitual das distribuições estudadas em sala de aula, identificando suas principais características, aplicações e os tipos de variáveis aleatórias associadas. Em seguida, foram desenvolvidos exemplos práticos relacionados à área de computação e tecnologia, realizando os cálculos das probabilidades de forma analítica.
 
@@ -173,7 +173,7 @@ plot(x, y,
 
 Na computação e engenharia, essa distribuição pode representar o tempo entre falhas de servidores, duração de componentes eletrônicos e intervalo entre chegadas de pacotes em redes.
 
-##Distribuição Uniforme
+## Distribuição Uniforme
 
 A Distribuição Uniforme é utilizada quando todos os valores de um intervalo possuem a mesma probabilidade de ocorrência.
 
@@ -192,7 +192,7 @@ plot(x, y,
 ```
 
 
-## 🔍 Resultados e Discussão
+## Resultados e Discussão
 
 Apresente e interprete os resultados obtidos a partir dos dados coletados.
 
@@ -209,7 +209,7 @@ Em seguida, discuta os resultados à luz dos conceitos teóricos:
 - Existem possíveis fontes de erro experimental?
 
 
-## 🧠 Considerações finais
+## Considerações finais
 
 O estudo das distribuições de probabilidade permitiu compreender a aplicação das variáveis aleatórias discretas e contínuas em diferentes problemas estatísticos e computacionais. As distribuições analisadas mostraram-se importantes para modelar fenômenos reais e calcular probabilidades de forma eficiente.
 
@@ -217,7 +217,7 @@ Os resultados obtidos analiticamente e no R apresentaram compatibilidade, demons
 
 Assim, conclui-se que as distribuições de probabilidade possuem grande importância na análise de dados e na tomada de decisões em diversas áreas do conhecimento.
 
-## 📖 Referências
+## Referências
 
 R CORE TEAM. R: A Language and Environment for Statistical Computing. Vienna: R Foundation for Statistical Computing, 2025. Disponível em: R Project for Statistical Computing
 . Acesso em: 12 maio 2026.
