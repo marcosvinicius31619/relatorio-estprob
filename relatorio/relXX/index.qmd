@@ -1,7 +1,7 @@
 ---
 # Só mude aqui!!!!
-author: "Nome do Aluno"
-title: "Relatório de Aula Prática XX"
+author: "Marcos Vinícius e Daniel de Freitas"
+title: "Relatório de Aula Prática 04"
 bibliography: referencias.bib
 # A partir daqui nao faca alteracoes!!!!!
 link-citations: true
@@ -27,53 +27,170 @@ execute:
 
 ## 📌 Introdução
 
-Descreva o contexto da prática e sua importância.
+A Estatística e a Probabilidade possuem grande importância na análise de fenômenos aleatórios presentes em diversas áreas, especialmente na computação, engenharia e ciências aplicadas. As distribuições de probabilidade permitem modelar matematicamente situações incertas e calcular as chances de ocorrência de determinados eventos, sendo fundamentais para a tomada de decisões baseada em dados.
 
-> Exemplo: análise da variabilidade em experimentos físicos utilizando uma catapulta.
+Entre as principais distribuições estudadas destacam-se a Distribuição Binomial, a Distribuição de Poisson e a Distribuição Normal, associadas a variáveis aleatórias discretas e contínuas. Essas distribuições são amplamente utilizadas para representar situações reais, como falhas em sistemas, quantidade de acessos a servidores e tempos de resposta de processos computacionais.
 
+O objetivo deste trabalho é apresentar as características e aplicações dessas distribuições, demonstrando exemplos práticos com cálculos realizados de forma analítica e utilizando a linguagem R e o pacote leem
+. Além disso, serão exploradas outras distribuições discretas e contínuas, ampliando o entendimento sobre a modelagem estatística e suas aplicações práticas
 
-
-## 🎯 Objetivos
-
-### Objetivo geral
-
-Descrever o objetivo principal da prática.
-
-### Objetivos específicos
-
-- Coletar dados experimentais  
-- Aplicar estatística descritiva  
-- Construir gráficos  
-- Interpretar resultados  
-
----
-
-## 📚  Fundamentação Teórica
-
-Apresente os conceitos principais:
-
-- Média
-- Variância
-- Desvio padrão
-- Amostragem
-
-$$
-\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
-$$
-
----
 
 ## ⚙️ Metodologia
 
-::: {.callout-note}
-Descreva como o experimento foi realizado.
-:::
+Neste trabalho foi utilizada uma abordagem teórica e computacional para o estudo das distribuições de probabilidade discretas e contínuas. Inicialmente, realizou-se uma revisão conceitual das distribuições estudadas em sala de aula, identificando suas principais características, aplicações e os tipos de variáveis aleatórias associadas. Em seguida, foram desenvolvidos exemplos práticos relacionados à área de computação e tecnologia, realizando os cálculos das probabilidades de forma analítica.
 
-- Materiais utilizados  
-- Procedimento  
-- Número de repetições  
+### Distribuição binomial
 
----
+Utilizada para modelar a quantidade de sucessos em um número fixo de tentativas independentes.
+
+```{R}
+#| echo: true
+library(leem)
+
+dbinom(2, size = 8, prob = 0.1)
+```
+
+### Distribuição de poisson
+
+Aplicada na modelagem da quantidade de ocorrências de eventos em um intervalo de tempo ou espaço.
+
+```{R}
+#| echo: true
+dpois(6, lambda = 4)
+```
+
+### Distribuição normal
+
+```{R}
+#| echo: true
+pnorm(58, mean = 50, sd = 5)
+```
+
+### Distribuição Geometrica
+
+Utilizada para determinar a probabilidade do primeiro sucesso ocorrer em determinada tentativa.
+
+```{r}
+#| echo: true
+dgeom(3, prob = 0.2)
+```
+
+### Distribuição Hipergeometrica
+
+Aplicada em situações de amostragem sem reposição.
+
+```{r}
+#| echo: true
+dhyper(2, m = 5, n = 15, k = 4)
+```
+
+### Distribuição exponencial
+
+Utilizada para modelar o tempo entre ocorrências de eventos.
+
+```{r}
+#| echo: true
+pexp(5, rate = 0.1)
+```
+
+### Distribuição uniforme
+
+Empregada quando todos os valores de um intervalo possuem a mesma probabilidade de ocorrência.
+
+```{r}
+#| echo: true
+punif(5, min = 2, max = 8) -
+punif(3, min = 2, max = 8)
+```
+
+## Distribuições Complementares
+
+Além das distribuições Binomial, Poisson e Normal, existem outras distribuições importantes utilizadas na modelagem de variáveis aleatórias discretas e contínuas. Neste trabalho foram estudadas as distribuições Geométrica, Hipergeométrica, Exponencial e Uniforme, cada uma aplicada a diferentes tipos de problemas estatísticos.
+
+### Distribuições Discretas
+
+As distribuições discretas são utilizadas quando a variável aleatória assume valores inteiros e contáveis.
+
+#### Distribuição Geométrica
+
+A Distribuição Geométrica é utilizada para determinar a probabilidade de o primeiro sucesso ocorrer em uma determinada tentativa. Ela considera experimentos independentes com apenas dois resultados possíveis: sucesso ou fracasso.
+
+Sua função de probabilidade é dada por:
+
+```{r}
+#| echo: true
+x <- 1:10
+y <- dgeom(x - 1, prob = 0.2)
+
+barplot(y,
+        names.arg = x,
+        main = "Distribuição Geométrica",
+        xlab = "Tentativas",
+        ylab = "Probabilidade")
+```
+
+Essa distribuição é muito aplicada em sistemas computacionais, como tentativas de autenticação, transmissões de dados e processos de repetição até sucesso.
+
+#### Distribuição Hipergeométrica
+
+A Distribuição Hipergeométrica é utilizada em situações de amostragem sem reposição. Diferentemente da Binomial, a probabilidade de sucesso muda a cada retirada, pois os elementos não retornam ao conjunto inicial.
+
+Sua função é dada por:
+
+```{r}
+#| echo: true
+x <- 0:4
+y <- dhyper(x, m = 5, n = 15, k = 4)
+
+barplot(y,
+        names.arg = x,
+        main = "Distribuição Hipergeométrica",
+        xlab = "Quantidade de defeituosas",
+        ylab = "Probabilidade")
+```
+
+Essa distribuição pode ser aplicada em controle de qualidade, análise de componentes defeituosos e seleção de dados em bancos de informações.
+
+## Distribuições Contínuas
+
+As distribuições contínuas são utilizadas quando a variável aleatória pode assumir infinitos valores dentro de um intervalo.
+
+### Distribuição Exponencial
+
+A Distribuição Exponencial modela o tempo entre ocorrências de eventos independentes. É amplamente utilizada em estudos de confiabilidade e filas de atendimento.
+
+```{r}
+#| echo: true
+x <- seq(0, 50, by = 0.1)
+y <- dexp(x, rate = 0.1)
+
+plot(x, y,
+     type = "l",
+     main = "Distribuição Exponencial",
+     xlab = "Tempo",
+     ylab = "Densidade")
+```
+
+Na computação e engenharia, essa distribuição pode representar o tempo entre falhas de servidores, duração de componentes eletrônicos e intervalo entre chegadas de pacotes em redes.
+
+##Distribuição Uniforme
+
+A Distribuição Uniforme é utilizada quando todos os valores de um intervalo possuem a mesma probabilidade de ocorrência.
+
+Sua função densidade é:
+
+```{r}
+#| echo: true
+x <- seq(0, 10, by = 0.1)
+y <- dunif(x, min = 2, max = 8)
+
+plot(x, y,
+     type = "l",
+     main = "Distribuição Uniforme",
+     xlab = "Valores",
+     ylab = "Densidade")
+```
+
 
 ## 🔍 Resultados e Discussão
 
@@ -91,35 +208,19 @@ Em seguida, discuta os resultados à luz dos conceitos teóricos:
 - Quais fatores podem ter influenciado os resultados?
 - Existem possíveis fontes de erro experimental?
 
-Procure não apenas descrever, mas **interpretar os dados**.
-
-### 💬 Exemplo de como citar uma referência bibliográfica
-
-Depois de inserido as informaçõe no arquivo **referencias.bib**, use:
-
-- Segundo @Rbasico2022
-- Tudo é um objeto em R [@Rbasico2022]
-
-### 📊  Análise de Dados
-
-```{r}
-distancia <- c(10.2, 9.8, 10.5, 10.1, 9.9, 10.3)
-distancia
-```
 
 ## 🧠 Considerações finais
 
-Apresente uma síntese dos principais pontos observados no experimento.
+O estudo das distribuições de probabilidade permitiu compreender a aplicação das variáveis aleatórias discretas e contínuas em diferentes problemas estatísticos e computacionais. As distribuições analisadas mostraram-se importantes para modelar fenômenos reais e calcular probabilidades de forma eficiente.
 
-- Retome o objetivo da prática e indique se ele foi alcançado.
-- Destaque os principais aprendizados obtidos.
-- Comente brevemente sobre a qualidade dos dados coletados.
-- Sugira possíveis melhorias no procedimento experimental.
+Os resultados obtidos analiticamente e no R apresentaram compatibilidade, demonstrando a utilidade das ferramentas computacionais no estudo da Estatística. Além disso, os gráficos facilitaram a visualização e interpretação do comportamento de cada distribuição.
 
-Evite repetir apenas os resultados; foque nas **conclusões e reflexões** sobre a prática realizada.
-
-## Aprenda Quarto
-
-Acesse [Quarto](https://quarto.org/).
+Assim, conclui-se que as distribuições de probabilidade possuem grande importância na análise de dados e na tomada de decisões em diversas áreas do conhecimento.
 
 ## 📖 Referências
+
+R CORE TEAM. R: A Language and Environment for Statistical Computing. Vienna: R Foundation for Statistical Computing, 2025. Disponível em: R Project for Statistical Computing
+. Acesso em: 12 maio 2026.
+
+CRAN. Pacote leem. Comprehensive R Archive Network, 2025. Disponível em: Pacote leem no CRAN
+. Acesso em: 12 maio 2026.
